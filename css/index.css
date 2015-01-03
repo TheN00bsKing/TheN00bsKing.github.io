@@ -55,10 +55,22 @@ i{
 	padding-left: 60%;
 }
 
+.my-sticky-elementy{
+	opacity: 1;
+	width: 100%;
+}
 
+.my-sticky-element .stuck{
+	opacity: 0.8;
+	width: 100%;
+	position: fixed;
+}
 
-
-
+.header{
+	width: 100%;
+	height: 300px;
+	background-color: black;
+}
 @media screen and (max-width: 758px){
     nav ul li{
         width: 100%;
