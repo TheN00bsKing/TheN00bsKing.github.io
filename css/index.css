@@ -39,7 +39,9 @@ a{
 
 .handle{
     width:100%;
-    padding: 15px;
+    padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 38%;
     box-sizing: border-box;
     cursor: pointer;
     background-color: gray;
@@ -49,12 +51,15 @@ a{
     text-align: center;
 }
 
-span{
-    text-align:right;
-    padding-left: 8px;
+i{
+	padding-left: 60%;
 }
 
-@media screen and (max-width: 679px){
+
+
+
+
+@media screen and (max-width: 758px){
     nav ul li{
         width: 100%;
         box-sizing: border-box;
