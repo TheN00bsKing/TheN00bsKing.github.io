@@ -50,7 +50,7 @@ a{
     box-sizing: border-box;
     cursor: pointer;
     background-color: #B71C1C;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
     display: none;
     text-align: center;
@@ -118,5 +118,9 @@ i{
     
     .handle{
         display: block;
+    }
+    
+    a{
+        font-size: 30px;
     }
 }
