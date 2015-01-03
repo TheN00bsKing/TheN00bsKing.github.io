@@ -12,15 +12,23 @@
     <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css">
 </head>
 <body>
-<div class="header"></div>
+    <div class="header" data-0="background-position:0px 0px;" data-700="background-position:0px -200px;">
+        <div class="outer">
+			<div class="inner">
+				<div class="centerd">
+                    <img style="width: 482px; height: 328px;" src="images/red-sub.png">
+				</div>
+			</div>
+		</div>
+    </div>
 	   <nav class="my-sticky-element">
 		   <ul>
-			  <a href="#"><li>בית</li></a>
-			  <a href="#"><li>מידע עלינו</li></a>
-			  <a href="#"><li>עדכונים</li></a>
+			  <a href="#"><li>צרו קשר</li></a>
+			  <a href="#"><li>חזרות</li></a>
+			  <a href="#"><li>אירועים</li></a>
 			  <a href="#"><li>מוזיקה</li></a>
-			  <a href="#"><li>אירועים וחזרות</li></a>
-			  <a href="#"><li>צור קשר</li></a>
+			  <a href="#"><li>מידע עלינו</li></a>
+			  <a href="#"><li>בית</li></a>
 		   </ul>
 		   <div class="handle">תפריט<i class="fa fa-bars"></i></div>
 	   </nav>
@@ -30,7 +38,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>	
 <script src="bower_components/jquery-waypoints/waypoints.js"></script>
 <script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
-<script>
+<script src="bower_components/WOW-master/dist/wow.js"></script>
+<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
+<script type="text/javascript">
     $('.handle').on('click', function(){
         $('nav ul').toggleClass('showing');
     });
@@ -40,11 +50,11 @@
 		$('.my-sticky-element').waypoint('sticky');
 	});
 </script>
-<script>
-$(".my-sticky-element").toggle(
-  function(){$(".my-sticky-element").css({"opacity":"1"});},
-  function(){$(".my-sticky-element").css({"opacity":"0.8"});
-});
+<script type="text/javascript">
+    skrollr.init();
+</script>
+<script type="text/javascript">
+     new WOW().init();   
 </script>
 </body>
 </html>
