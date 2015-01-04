@@ -37,6 +37,7 @@ nav ul li{
 nav ul li:hover{
     background-color: white;
     color: #242424;
+	opacity: 1;
 }
 
 a{
