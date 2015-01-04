@@ -52,7 +52,7 @@ a{
 	padding-left: 38%;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: #1f1e1e;
+    background-color: rgb(31, 30, 30);
     font-size: 20px;
     color: white;
     display: none;
@@ -67,6 +67,7 @@ a{
 	width: 100%;
 	position: fixed;
     top: 0;
+	opacity: 1;
 }
 
 .header{
@@ -74,8 +75,7 @@ a{
     height: 400px;
     background-image: url(../images/band.jpg);
 	background-repeat: no-repeat;
-	background-size: 1800px 1100px;
-	background-position: center -160px;
+	background-position: center -280px;
 
 
 }
@@ -135,8 +135,7 @@ a{
    }
 
 .scrollup{
-	border-radius: 50%;
-    padding: 1em;
+	padding: 1em;
     position: fixed;
     bottom: 2em;
     right: 1em;
