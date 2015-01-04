@@ -9,7 +9,7 @@ section{
 }
 
 nav ul{
-    background-color: #C62828;
+    background-color: #242424;
     overflow: hidden;
     color: white;
     padding: 0;
@@ -22,9 +22,9 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
     padding-bottom: 20px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -32,14 +32,14 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background-color: #C62828;
-    color: white;
+    background-color: white;
+    color: #242424;
 }
 
 a{
     text-decoration: none;
     color: inherit;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .handle{
@@ -68,11 +68,8 @@ i{
 
 .header{
 	width: 100%;
-	height: 300px;
-    background-image: url(../images/Untitled-1.png);
-    background-repeat: repeat;
-    background-size: 50px;
-    background-position: 100px 100px;
+	height: 400px;
+
 
 }
 
