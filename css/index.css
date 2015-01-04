@@ -8,7 +8,7 @@ h1{
     color: white;
 }
 section{
-    visibility: hidden;
+
 }
 
 nav ul{
@@ -75,7 +75,7 @@ a{
     background-image: url(../images/band.jpg);
 	background-repeat: no-repeat;
 	background-size: 1800px 1100px;
-	background-position: center;
+	background-position: center -160px;
 
 
 }
