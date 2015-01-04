@@ -25,10 +25,10 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -42,7 +42,7 @@ nav ul li:hover{
 a{
     text-decoration: none;
     color: inherit;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .handle{
@@ -135,16 +135,15 @@ a{
    }
 
 .scrollup{
-    width: 25px;
-    height: 25px;
+	border-radius: 50%;
+    padding: 1em;
     position: fixed;
     bottom: 2em;
     right: 1em;
     text-decoration: none;
     color: white;
     background-color: #ba1e1e;
-    padding: 1em;
-    border-radius: 50%;
+	border-radius: 10000000px;
     text-align: center;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -156,6 +155,8 @@ a{
     .scrollup:hover{
         background-color: gray;
     }
+
+
 
 
 @media screen and (max-width: 765px){
