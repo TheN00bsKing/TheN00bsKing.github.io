@@ -121,6 +121,11 @@
     });
 </script>
 <script type="text/javascript">
+    $('nav ul li').on('click', function(){
+        $('nav ul').toggleClass('showing');
+    });
+</script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		$('.my-sticky-element').waypoint('sticky');
 	});
