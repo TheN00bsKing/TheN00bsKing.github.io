@@ -3,147 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>הצוללת האדומה</title>
-    <meta name="author" content="gilad shulyatzky">
     <meta name="description" content="האתר של הצוללת האדומה" >
     <meta name="keywords" content=" צוללת, מוזיקה, חזרות, קרית אונו">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="icon" href="images/red-sub.png">
-	<link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.css">
-    <link rel="stylesheet" href="bower_components/skeleton/css/normalize.css">
-    <link rel="stylesheet" href="bower_components/skeleton/css/skeleton.css">
-    <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css">
 </head>
 <body>
-    <div data-0="background-position: center -500px;" data-500="background-position: center -300px;" id="header" class="header">
-
-        <div class="outer">
-			<div class="inner">
-				<div class="centerd">
-                    <h1>הצוללת האדומה</h1>
-                    <br>
-                    <a data-scroll href="#nav" class="button">רדו למטה</a>
-				</div>
-			</div>
-		</div>
-
-    </div>
-	   <nav id="nav" class="my-sticky-element">
-		   <ul>
-			  <a data-scroll href="#contact"><li>צרו קשר</li></a>
-			  <a data-scroll href="#"><li>אירועים וחזרות</li></a>
-			  <a data-scroll href="#music"><li>מוזיקה</li></a>
-			  <a data-scroll href="#sync"><li>עדכונים</li></a>
-			  <a data-scroll href="#about"><li>מידע עלינו</li></a>
-			  <a data-scroll href="#header"><li>בית</li></a>
-		   </ul>
-		   <div class="handle">תפריט<i class="fa fa-bars"></i></div>
-	   </nav>
-	   
-		<br>
-		<br>
-		
-	
-	<section id="about" class="about container">
-        <div class="column one-third">
-			<h3>Lorem.</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, dicta, obcaecati nulla, impedit libero veritatis autem voluptate officiis id sint ab placeat, aut minus nostrum iure explicabo labore numquam quibusdam.</p>
-		</div>
-		<div class="column one-third">
-			<h3>Lorem.</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, tempore officia sequi. Iure nobis, accusantium laudantium impedit maiores fuga consequuntur vero nulla reiciendis enim, optio, dolor praesentium, ad velit temporibus!</p>
-		</div>
-		<div class="column one-third">
-			<h3>Lorem.</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis expedita consequuntur cumque nobis sapiente illum, iusto dolores facilis enim odio voluptatem, ut dicta rem atque incidunt tenetur doloribus. Hic, quibusdam.</p>
-		</div>
-	</section>
-	
-	<section id="sync" class="sync">
-	    
-	    
-	</section>
-	
-	<section id="music" class="music">
-	
-		<div class="container">
-		
-		<h1 class="columns twelve ">Lorem ipsum dolor.</h1>
-		<p class="columun two-thirds">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit reprehenderit illo rem incidunt necessitatibus quae soluta est dolorem beatae vitae!</p>
-		
-		</div> 
-	</section>
-	
-    
-   <section id="contact" class="contact container">
 
 
-       
-		<form class="contactform" method="post" autocomplete="off">
-			<input type="hidden" id="myEmail" name="name" value="hatuki.shuki@gmail.com">
-			<input type="text" id="name" name="name" value="" placeholder="Full Name">
-			<input type="email" id="email" name="email" value="" placeholder="Email">
-			<textarea id="project" name="project" placeholder="Project"></textarea>
-
-			<button class="button" type="submit">Send</button>
-		</form>
-        
-    </section>
-        
-        
-   
-	    
-	        
-	            
-	                    
-<a href="#" class="scrollup"><i class="fa fa-arrow-up fa-2x"></i></a>
-    
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>	
-<script src="bower_components/jquery-waypoints/waypoints.js"></script>
-<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
-<script src="bower_components/WOW-master/dist/wow.js"></script>
-<script src="bower_components/skrollr/dist/skrollr.min.js"></script>
-<script src="bower_components/smooth-scroll/dist/js/smooth-scroll.js"></script>
-<script type="text/javascript">
-	  $(document).ready(function () {
-		  $(window).scroll(function () {
-			  if ($(this).scrollTop() > 400) {
-              $('.scrollup').fadeIn(200);
-			  } else {
-              $('.scrollup').fadeOut(200);
-			  }
-		  });
-		  $('.scrollup').click(function () {
-			  $("html, body").animate({
-              scrollTop: 0
-			  }, 600);
-          return false;
-		  });
-	  });
-</script>
-<script type="text/javascript">
-    $('.handle').on('click', function(){
-        $('nav ul').toggleClass('showing');
-    });
-</script>
-<script type="text/javascript">
-    $('nav ul li').on('click', function(){
-        $('nav ul').toggleClass('showing');
-    });
-</script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('.my-sticky-element').waypoint('sticky');
-	});
-</script>
-<script type="text/javascript">
-    skrollr.init();
-</script>
-<script type="text/javascript">
-     new WOW().init();   
-</script>
-<script type="text/javascript">
-    smoothScroll.init();
-</script>
+  
 </body>
 </html>
