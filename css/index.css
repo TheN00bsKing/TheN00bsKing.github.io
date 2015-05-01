@@ -4,7 +4,28 @@ body {
     
 }
 
-#headline {
-    margin: auto;
-    background-image: url()
+#logo {
+   margin: auto;
 }
+
+.outer{
+
+		width: 100%;
+		height: 100%;
+		display: table;
+
+	}
+
+	.inner{
+
+		display: table-cell;
+		vertical-align: middle;
+		text-align: center;
+	}
+
+	.centerd{
+
+		display: inline-block;
+		position: relative;
+		text-align: center;
+	}
