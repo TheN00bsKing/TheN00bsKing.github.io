@@ -15,7 +15,7 @@ body {
     margin: 0px;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    opacity: 1;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,3 +46,86 @@ body {
     margin-top: 140px;
 }
 
+
+nav{
+	z-index: 1;
+}
+
+nav ul{
+    background-color: #242424;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    -webkit-transition:max-height 0.4s ;
+    -o-transition:max-height 0.4s ;
+    transition:max-height 0.4s ;
+}
+
+nav ul li{
+    display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+nav ul li:hover{
+    background-color: white;
+    color: #242424;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: 16px;
+}
+
+.handle{
+    width:100%;
+    padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 38%;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: rgb(31, 30, 30);
+    font-size: 20px;
+    color: white;
+    display: none;
+    text-align: center;
+}
+
+.handle i{
+	padding-left: 60%;
+}
+
+@media screen and (max-width: 765px){
+    nav ul li{
+        width: 100%;
+        box-sizing: border-box;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+		
+    }
+     .showing{
+		max-height: 1;
+	}
+    
+    nav ul{
+        max-height: 0;
+    }
+    
+    .handle{
+        display: block;
+    }
+    
+    a{
+        font-size: 14px;
+    }
+}

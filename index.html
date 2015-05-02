@@ -8,6 +8,7 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <link rel="icon" href="images/red-sub.png">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css">
 </head>
 <body>
     <div id="header">
@@ -19,9 +20,44 @@
         <div id="logo">
             <img src="images/red-sub-logo.png" height="auto" width="600px">
         </div>
+        
+        <br><br>
+        <br><br>
+        <br><br>
+        <br><br>
+		
+       	 <nav id="nav">
+		   <ul>
+			  <a><li>צרו קשר</li></a>
+			  <a><li>אירועים וחזרות</li></a>
+			  <a><li>מוזיקה</li></a>
+			  <a><li>עדכונים</li></a>
+			  <a><li>מידע עלינו</li></a>
+			  <a><li>בית</li></a>
+		   </ul>
+		   <div class="handle">תפריט<i class="fa fa-bars"></i></div>
+		</nav>
 	</div>
-    <script src="js/index/header.js"></script>
+    
 	
 	
+	
+	
+	<script type="text/javascript">
+		$('.handle').on('click', function(){
+			$('nav ul').toggleClass('.showing');
+		});
+	</script>
+	
+	<script type="text/javascript">
+		$('nav ul li').on('click', function(){
+			$('nav ul').toggleClass('showing');
+		});
+	</script>
+	
+	
+	<script src="js/index/header.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>	
+
 </body>
 </html>
