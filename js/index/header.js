@@ -1,38 +1,35 @@
-var path = "../images/headerGallery/";
-var backgrounds = [
-    "1.jpg",
-    "2.jpg",
-    "3.jpg"
-];
 var current = 0;
+var ablImages = 3;
+var delay = 10;
+function numToString(i){
+    return "HI" + (i + 1);
+}
 
 function nextBackground() {
-    "use strict";
-    alert("changing backgound to " + path + backgrounds[current]);
-    Document.getElementById("test1").style.opacity = 1;
-    if(current == backgrounds.length - 1) {
+    var selected = numToString(current);
+    document.getElementById(selected).style.opacity = 0;
+    if(current == ablImages - 1) {
         current = 0;
     } else {
         current++;
     }
-    Document.getElementById("test1").style.opacity = 0;
+    selected = numToString(current);
+    document.getElementById(selected).style.opacity = 1;
 }
 
 function lastBackground(){
-    "use strict";
-    alert("changing backgound to " + path + backgrounds[current]);
-    document.getElementById("test1").style.opacity = 1;
+    document.getElementById(numToString(current)).style.opacity = 0;
     if(current == 0) {
-        current = backgrounds.length - 1;
+        current = ablImages - 1;
     } else {
         current--;
     }
-    document.getElementById("test1").style.opacity = 0;
+    document.getElementById(numToString(current)).style.opacity = 1;
 }
 
 function backgoundLoop() {
-    "use strict";
     nextBackground();
-    setTimeout(backgoundLoop, 5000);
+    setTimeout(backgoundLoop, delay * 1000);
 }
+
 backgoundLoop();

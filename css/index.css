@@ -1,40 +1,41 @@
 body {
-    margin: 0;
+    margin: 0px;
+    top: 0px;
     background-color: #2a2a2a;
     color: #ffffff;
+    font-family: sans-serif;
 }
 
 #header {
     height: 550px;
     width: 100%;
-    position: absolute;
 }
 
 .headerImage {
-    z-index: -100;
-    margin: 0px;
-    height: 100%;
+    z-index: -101;
+    height: 550px;;
     width: 100%;
-    opacity: 1;
+    opacity: 0;
     position: absolute;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 
 .arrow {
-    padding: 20px;
-    margin-top: 220px;
     position: absolute;
-    width: 70px;
-    height: 70px;
+    margin-top: -170px;
+    padding: 40px;
 }
 
 #arrowLeft {
     left: 0px;
 }
 
-#arrowRight{
+#arrowRight {
     right: 0px;
 }
 
@@ -43,16 +44,22 @@ body {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
+}
+
+#logo img {
     margin-top: 140px;
 }
 
+#menu ul{
+    background: #424242;
+    background: -moz-linear-gradient(top,  #424242 0%, #242424 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#424242), color-stop(100%,#242424));
+    background: -webkit-linear-gradient(top,  #424242 0%,#242424 100%);
+    background: -o-linear-gradient(top,  #424242 0%,#242424 100%);
+    background: -ms-linear-gradient(top,  #424242 0%,#242424 100%);
+    background: linear-gradient(to bottom,  #424242 0%,#242424 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#242424',GradientType=0 );
 
-nav{
-	z-index: 1;
-}
-
-nav ul{
-    background-color: #242424;
     overflow: hidden;
     color: white;
     padding: 0;
@@ -63,7 +70,7 @@ nav ul{
     transition:max-height 0.4s ;
 }
 
-nav ul li{
+#menu ul li{
     display: inline-block;
     padding-left: 16px;
     padding-right: 16px;
@@ -74,25 +81,33 @@ nav ul li{
     transition: 0.3s;
 }
 
-nav ul li:hover{
+#menu ul li:hover{
     background-color: white;
     color: #242424;
 }
 
-a{
+#menu a{
     text-decoration: none;
     color: inherit;
     font-size: 16px;
 }
 
 .handle{
+    background: #424242;
+    background: -moz-linear-gradient(top,  #424242 0%, #242424 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#424242), color-stop(100%,#242424));
+    background: -webkit-linear-gradient(top,  #424242 0%,#242424 100%);
+    background: -o-linear-gradient(top,  #424242 0%,#242424 100%);
+    background: -ms-linear-gradient(top,  #424242 0%,#242424 100%);
+    background: linear-gradient(to bottom,  #424242 0%,#242424 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#242424',GradientType=0 );
+    
     width:100%;
     padding-top: 18px;
 	padding-bottom: 18px;
 	padding-left: 38%;
     box-sizing: border-box;
     cursor: pointer;
-    background-color: rgb(31, 30, 30);
     font-size: 20px;
     color: white;
     display: none;
@@ -104,7 +119,7 @@ a{
 }
 
 @media screen and (max-width: 765px){
-    nav ul li{
+    #menu ul li{
         width: 100%;
         box-sizing: border-box;
         padding-left: 15px;
@@ -117,7 +132,7 @@ a{
 		max-height: 1;
 	}
     
-    nav ul{
+    #menu ul{
         max-height: 0;
     }
     
@@ -125,7 +140,7 @@ a{
         display: block;
     }
     
-    a{
+    #menu a{
         font-size: 14px;
     }
 }
