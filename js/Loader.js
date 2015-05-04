@@ -10,11 +10,10 @@ document.write("<div id='loadingScreen'><div id='loadAnination'><div class='load
     }
 })();
 
-function disable(){
-    document.getElementById("loadingScreen").style.display = "none";
-}
 
 function hideLoadingScreen() {
     document.getElementById("loadingScreen").style.opacity = "0";
-    setTimeout(disable ,3000);
+    setTimeout(function(){
+        document.getElementById("loadingScreen").style.display = "none";
+    }, 6000);
 }
