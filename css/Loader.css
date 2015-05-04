@@ -1,5 +1,5 @@
 #loadingScreen {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     background-color: #bf0007;
