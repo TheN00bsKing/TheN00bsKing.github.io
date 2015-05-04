@@ -31,6 +31,10 @@ body {
     padding: 40px;
 }
 
+.arrow i {
+    cursor: pointer;
+}
+
 #arrowLeft {
     left: 0px;
 }
@@ -103,8 +107,8 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#242424',GradientType=0 );
     
     width:100%;
-    padding-top: 18px;
-	padding-bottom: 18px;
+    padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 38%;
     box-sizing: border-box;
     cursor: pointer;
@@ -120,19 +124,24 @@ body {
 
 @media screen and (max-width: 765px){
     #header {
-        height: 350px;
+        height: 220px;
     }
     
     .headerImage {
-        height: 350px;
+        height: 220px;
     }
     
     #logo {
-        width: 400px;
+        width: 50%;
     }
     
     #logo img {
-        margin-top: 100px;
+        margin-top: 70px;
+    }
+    
+    .arrow {
+        margin-top: -100px;
+        font-size: 10px;
     }
     
     #menu ul li{
@@ -142,7 +151,6 @@ body {
         padding-right: 15px;
         padding-top: 15px;
         padding-bottom: 15px;
-		
     }
      .showing{
 		max-height: 1;
