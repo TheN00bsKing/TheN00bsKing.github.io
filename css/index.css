@@ -74,6 +74,7 @@ body {
     -webkit-transition:max-height 0.4s ;
     -o-transition:max-height 0.4s ;
     transition:max-height 0.4s ;
+    direction: rtl;
 }
 
 #menu ul li{
