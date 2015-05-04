@@ -153,13 +153,6 @@ body {
         padding-top: 15px;
         padding-bottom: 15px;
     }
-     .showing{
-		max-height: 1;
-	}
-    
-    #menu ul{
-        max-height: 0;
-    }
     
     .handle{
         display: block;
