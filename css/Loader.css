@@ -1,0 +1,25 @@
+#loadingScreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #bf0007;
+    z-index: 1001;
+    -webkit-transition: 3s opacity 3s;
+    -o-transition: 3s opacity 3s;
+    transition: 3s opacity 3s;
+    
+}
+
+#loadAnination {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 48%;
+}
+
+#loadAnination .line-scale-party > div {
+    background: #242424;
+    height: 100px;
+    width: 10px;
+    margin: 10px;
+}
