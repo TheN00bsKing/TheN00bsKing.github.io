@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     top: 0px;
-    background-color: #2a2a2a;
+    background-color: #fff;
     color: #ffffff;
     font-family: sans-serif;
 }
@@ -66,17 +66,25 @@ body {
     -o-transition:max-height 0.4s ;
     transition:max-height 0.4s ;
     direction: rtl;
+    
+    background-color: #2a2a2a;
+    border-top: solid 5px #4d4d4d;
 }
 
 #menu ul li{
     display: inline-block;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 4px 15px;
+    margin: 8px 0.5%;
+    cursor: pointer;
+    
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
+    
+    background-color: #bf0007;
+    background-clip: border-box;
+    border: solid 3px #bf0007;
+    border-radius: 30px;
 }
 
 #menu ul li:hover{
