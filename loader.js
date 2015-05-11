@@ -1,6 +1,5 @@
-//document.write("<link rel='stylesheet' href='css/loaders.min.css'>");
-//document.write("<link rel='stylesheet' href='css/loader.css'>");
-//document.write("<div id='loadingScreen'><div id='loadAnination'><div class='loader-inner line-scale-pulse-out'><div></div><div></div><div></div><div></div><div></div></div></div></div>");
+document.head.write = " <link rel='stylesheet' href='css/loader.css'> <link rel='stylesheet' href='css/loaders.min.css'>";
+
 function hideLoadingScreen() {
     document.getElementById("loadingScreen").style.opacity = "0";
     setTimeout(function () {
