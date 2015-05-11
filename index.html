@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css">
     <script src="js/loader.js" type="text/javascript"></script>
+    <script src="js/index/menu.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="header">
@@ -25,7 +26,7 @@
 	</div>
     <div id="menu">
         <nav>
-		   <ul>
+		   <ul id="menuBT">
 			  <a><li>עדכונים</li></a>
 			  <a><li>לוח חדר חזרות</li></a>
 			  <a><li>גלריה</li></a>
@@ -33,22 +34,8 @@
 			  <a><li>מידע עלינו</li></a>
 			  <a><li>צור קשר</li></a>
 		   </ul>
-		   <div class="handle">תפריט<i class="fa fa-bars"></i></div>
+		   <div id="handle" onclick="toggleMenu()">תפריט<i class="fa fa-bars"></i></div>
 		</nav>
     </div>
-    <script type="text/javascript">
-		$('.handle').on('click', function(){
-			$('nav ul').toggleClass('.showing');
-		});
-	</script>
-	
-	<script type="text/javascript">
-		$('nav ul li').on('click', function(){
-			$('nav ul').toggleClass('showing');
-		});
-	</script>
-	
-	<script src="js/index/header.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>	
 </body>
 </html>
