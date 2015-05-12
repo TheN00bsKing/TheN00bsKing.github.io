@@ -14,7 +14,7 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 48%;
+    text-align: center;
 }
 
 #loadAnination .line-scale-pulse-out > div {
