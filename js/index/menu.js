@@ -1,8 +1,8 @@
 function toggleMenu() {
     var ul = document.getElementById("menuBT");
-    if (ul.style.display !== 'none') {
-        ul.style.display = 'none';
+    if (ul.style.height !== '0px') {
+        ul.style.height = '0px';
     } else {
-        ul.style.display = 'block';
+        ul.style.height = 'auto';
     }
 }
