@@ -61,31 +61,29 @@ body {
 }
 
 #menu ul{
+	background-color: #242424;
     overflow: hidden;
     color: white;
     padding: 0;
     margin: 0;
     text-align: center;
-    direction: rtl;
+    -webkit-transition:max-height 0.4s ;
+    -o-transition:max-height 0.4s ;
+    transition:max-height 0.4s ;
 }
 
 #menu ul li{
-    display: inline-block;
-    padding: 4px 15px;
-    margin: 8px 0.5%;
-    cursor: pointer;
-    
-    -webkit-transition: 0.3s background-color;
-    -o-transition: 0.3s background-color;
-    transition: 0.3s background-color;
-    
-    background-color: #bf0007;
-    background-clip: border-box;
-    border: solid 3px #bf0007;
-    border-radius: 30px;
+   display: inline-block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
-#menu ul li:hover{
+ #menu ul li:hover{
     background-color: white;
     color: #242424;
 }
@@ -96,7 +94,7 @@ body {
     font-size: 16px;
 }
 
-#handle{
+.handle{
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
@@ -107,7 +105,7 @@ body {
     text-align: center;
 }
 
-#handle i{
+.handle i{
     position: absolute;
 	right: 0px;
     padding: 0px 30px;
@@ -136,23 +134,25 @@ body {
         font-size: 10px;
     }
     
-    #menu {
-        border-top: solid 3px #4d4d4d;
-    }
+
     
     #menu ul li{
-        width: 50%;
+          width: 100%;
         box-sizing: border-box;
-        padding: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
+	
+
+	
     
-    #menuBT{
-        overflow: hidden;
-        height: 0px;
-    }
+  #menu ul{
+	  max-height: 0;
+  }
     
-    #handle {
-        border-top: solid 3px #4d4d4d;
+    .handle {
         display: block;
     }
     
