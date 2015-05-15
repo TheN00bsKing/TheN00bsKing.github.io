@@ -1,8 +1,7 @@
 body {
     margin: 0px;
     top: 0px;
-    background-color: #fff;
-    color: #ffffff;
+
     font-family: sans-serif;
 }
 
@@ -12,7 +11,6 @@ body {
 }
 
 .headerImage {
-    z-index: -101;
     height: 550px;
     width: 100%;
     opacity: 0;
@@ -70,6 +68,7 @@ body {
     -webkit-transition:max-height 0.4s ;
     -o-transition:max-height 0.4s ;
     transition:max-height 0.4s ;
+	z-index: 1;
 }
 
 #menu ul li{
@@ -96,7 +95,7 @@ body {
 
 .handle{
     width: 100%;
-    padding: 8px;
+    padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
     font-size: 20px;
@@ -134,10 +133,12 @@ body {
         font-size: 10px;
     }
     
-
-    
-    #menu ul li{
-          width: 100%;
+   #menu ul{
+	   max-height: 0;
+   }
+	
+	#menu ul li{
+        width: 100%;
         box-sizing: border-box;
         padding-left: 15px;
         padding-right: 15px;
@@ -145,13 +146,10 @@ body {
         padding-bottom: 15px;
     }
 	
-
+	.showing{
+		max-height: 28em;
+	}
 	
-    
-  #menu ul{
-	  max-height: 0;
-  }
-    
     .handle {
         display: block;
     }
