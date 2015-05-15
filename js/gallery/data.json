@@ -2,26 +2,26 @@ images = [
     {
         "image" : "10835307_10152908954438063_2386315043622974636_o.jpg",
         "title" : "Letterpress asymmetrical",
-        "desciption" : "Chillwave hoodie ea gentrify aute sriracha consequat."
+        "description" : "Chillwave hoodie ea gentrify aute sriracha consequat."
     },
     {
         "image" : "10861122_10152848242003063_3491140799197225903_o.jpg",
         "title" : "Vice velit chia",
-        "desciption" : "Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo."
+        "description" : "Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo."
     },
     {
         "image" : "11081424_10152843765788063_2918571659262455564_n.jpg",
         "title" : "Brunch semiotics",
-        "desciption" : "Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo."
+        "description" : "Ex disrupt cray yr, butcher pour-over magna umami kitsch before they sold out commodo."
     },
     {
         "image" : "11174475_10152906765543063_1614722432082231164_o.jpg",
         "title" : "Letterpress asymmetrical",
-        "desciption" : "Chillwave hoodie ea gentrify aute sriracha consequat."
+        "description" : "Chillwave hoodie ea gentrify aute sriracha consequat."
     },
     {
         "image" : "11194629_10152908953413063_4456499904523286531_o.jpg",
         "title" : "Vice velit chia",
-        "desciption" : "Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo."
+        "description" : "Laborum tattooed iPhone, Schlitz irure nulla Tonx retro 90's chia cardigan quis asymmetrical paleo."
     }
 ]
