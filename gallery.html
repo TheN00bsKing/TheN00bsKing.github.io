@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>הצוללת האדומה</title>
+    <meta name="description" content="האתר של הצוללת האדומה" >
+    <meta name="keywords" content=" צוללת, מוזיקה, חזרות, קרית אונו">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="images/red-sub.png">
+    <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css">
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/gallery/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/gallery/component.css" />
+    <script src="js/gallery/modernizr.custom.js"></script>
+    <script src="js/gallery/gallery.js"></script>
+    <script src="js/gallery/data.json"></script>
+</head>
+<body>
+		<div class="container">
+			<div id="grid-gallery" class="grid-gallery">
+				<section class="grid-wrap">
+					<ul class="grid" id="grid">
+						<script>printGallery();</script>
+					</ul>
+				</section><!-- // grid-wrap -->
+				<section class="slideshow">
+                    <ul id="slideshow">
+                    </ul>
+					<script>printSlideshow();</script>
+					<nav>
+						<span class="nav-prev"><i class="fa fa-angle-left fa-3x" ></i></span>
+						<span class="nav-next"><i class="fa fa-angle-right fa-3x" ></i></span>
+						<span class="nav-close "><i class="fa fa-times fa-2x" ></i></span>
+					</nav>
+				</section><!-- // slideshow -->
+			</div><!-- // grid-gallery -->
+		</div>
+		<script src="js/gallery/imagesloaded.pkgd.min.js"></script>
+		<script src="js/gallery/masonry.pkgd.min.js"></script>
+		<script src="js/gallery/classie.js"></script>
+		<script src="js/gallery/cbpGridGallery.js"></script>
+		<script>
+			new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+		</script>
+	</body>
+</html>
