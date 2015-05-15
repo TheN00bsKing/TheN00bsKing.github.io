@@ -6,7 +6,6 @@ function printGallery() {
     for (i = 0; i < images.length; i++) {
         grid += "<li> <figure> <img src='images/gallery/" + images[i].image + "' /> <figcaption> <h3>" + images[i].title + "</h3> <p>" + images[i].description + "</p> </figcaption> </figure> </li>";
     }
-    alert(grid);
     document.getElementById("grid").innerHTML = grid;
 }
 
@@ -16,6 +15,5 @@ function printSlideshow() {
     for (i = 0; i < images.length; i++) {
         slide += "<li> <figure> <figcaption> <h3>" + images[i].title + "</h3> <p>" + images[i].description + "</p> </figcaption> <img src='images/gallery/" + images[i].image + "' /> </figure> </li>";
     }
-    alert(slide);
     document.getElementById("slideshow").innerHTML = slide;
 }

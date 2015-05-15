@@ -1,4 +1,9 @@
-
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #2e2e2e;
+    color: #bf0007;
+}
 /* General style */
 .grid-gallery ul {
 	list-style: none;
@@ -52,8 +57,9 @@
 }
 
 .grid figcaption {
-	background: #e4e4e4;
-	padding: 25px;
+	background: #424242;
+	padding: 20px;
+    border-top: solid 3px #bf0007
 }
 
 /* Slideshow style */
@@ -103,13 +109,14 @@
 }
 
 .slideshow li {
-	width: 660px;
-	height: 560px;
+    width: 660px;
+    height: 560px;
 	position: absolute;
-	top: 50%;
+    top: 50%;
 	left: 50%;
 	margin: -280px 0 0 -330px;
 	visibility: hidden;
+    border: 20px solid #424242
 }
 
 .slideshow li.show {
@@ -121,9 +128,10 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
-	background: rgba(255,255,255,0.8);
+    padding: 20px;
+	top: -20px;
+	left: -20px;
+	background: rgba(0,0,0,0.4);
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
@@ -138,13 +146,21 @@
 .slideshow figure {
 	width: 100%;
 	height: 100%;
-	background: #fff;
-	border: 50px solid #fff;
+	background: #424242;
 	overflow: hidden;
+}
+
+.slideshow figure img {
+    max-width: 100%;
+    max-height: 85%;
+    height: auto;
+    width: auto;
+    margin: 0 auto;
 }
 
 .slideshow figcaption {
 	padding-bottom: 20px;
+    max-height: 20%
 }
 
 .slideshow figcaption h3 {
@@ -156,11 +172,12 @@
 .slideshow nav span {
 	position: fixed;
 	z-index: 1000;
-	color: #59656c;
+	color: #ffffff;
 	text-align: center;
 	padding: 3%;
 	cursor: pointer;
 	font-size: 2.2em;
+    opacity: 0.7;
 }
 
 .slideshow nav span.nav-prev,
@@ -178,7 +195,6 @@
 	top: 0;
 	right: 0;
 	padding: 0.5em 1em;
-	color: #31373a;
 }
 
 /* Example media queries (reduce number of columns and change slideshow layout) */
@@ -207,10 +223,6 @@
 	.slideshow nav span.nav-close {
 		font-size: 1.8em;
 		padding: 0.3em;
-	}
-
-	.info-keys {
-		display: none;
 	}
 
 }
