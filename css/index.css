@@ -21,6 +21,7 @@ body {
     -webkit-transition: 1s opacity;
     -o-transition: 1s opacity;
     transition: 1s opacity;
+	z-index: -101;
 }
 
 .arrow {
@@ -48,17 +49,19 @@ body {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
+
 }
 
 #logo img {
     margin-top: 140px;
+
 }
-#menu {
+.menu {
     background-color: #2a2a2a;
     border-top: solid 5px #4d4d4d;
 }
 
-#menu ul{
+.menu ul{
 	background-color: #242424;
     overflow: hidden;
     color: white;
@@ -68,10 +71,9 @@ body {
     -webkit-transition:max-height 0.4s ;
     -o-transition:max-height 0.4s ;
     transition:max-height 0.4s ;
-	z-index: 1;
 }
 
-#menu ul li{
+.menu ul li{
    display: inline-block;
     padding-left: 16px;
     padding-right: 16px;
@@ -82,12 +84,12 @@ body {
     transition: 0.3s;
 }
 
- #menu ul li:hover{
+.menu ul li:hover{
     background-color: white;
     color: #242424;
 }
 
-#menu a{
+.menu a{
     text-decoration: none;
     color: inherit;
     font-size: 16px;
@@ -133,11 +135,11 @@ body {
         font-size: 10px;
     }
     
-   #menu ul{
+     ul{
 	   max-height: 0;
    }
 	
-	#menu ul li{
+	.menu ul li{
         width: 100%;
         box-sizing: border-box;
         padding-left: 15px;
@@ -154,7 +156,7 @@ body {
         display: block;
     }
     
-    #menu a{
+    .menu a{
         font-size: 16px;
     }
 }
