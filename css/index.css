@@ -58,13 +58,13 @@ body {
 }
 .menu {
     background-color: #2a2a2a;
-    border-top: solid 5px #4d4d4d;
+
 }
 
 .menu ul{
 	background-color: #242424;
     overflow: hidden;
-    color: white;
+    color: rgba(255, 255, 255, 0.42);
     padding: 0;
     margin: 0;
     text-align: center;
@@ -78,15 +78,17 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 10px;
+	border-bottom: 5px solid #575757;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
 
 .menu ul li:hover{
-    background-color: white;
-    color: #242424;
+	border-bottom: 5px solid  #bf0007;
+	color: white;
+    
 }
 
 .menu a{
