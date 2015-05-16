@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bower_components/font-awsome/css/font-awesome.css">
 	<script src="js/loader.js" type="text/javascript"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="bower_components/jquery-waypoints/waypoints.js"></script>
+	<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
 
 </head>
 <body>
@@ -26,7 +28,7 @@
         <script src="js/index/header.js"></script>
 	</div>
    
-        <nav class="menu">
+        <nav class="menu my-sticky-element">
 		   <ul>
 			  <a><li>עדכונים</li></a>
 			  <a><li>לוח חדר חזרות</li></a>
@@ -39,4 +41,15 @@
 		</nav>
  
 </body>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script src="bower_components/jquery-waypoints/waypoints.js"></script>
+	<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.my-sticky-element').waypoint('sticky');
+		});
+	</script>
+
 </html>

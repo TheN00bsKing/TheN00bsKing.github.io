@@ -112,6 +112,12 @@ body {
     padding: 0px 30px;
 }
 
+.my-sticky-element.stuck{
+	width: 100%;
+	position: fixed;
+    top: 0;
+}
+
 @media screen and (max-width: 765px){
     #header {
         height: 220px;
