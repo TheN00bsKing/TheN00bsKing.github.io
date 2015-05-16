@@ -145,7 +145,7 @@ body {
     padding: 0px 30px;
 }
 
-.my-sticky-element.stuck{
+#menu.stuck{
 	width: 100%;
 	position: fixed;
     top: 0;
