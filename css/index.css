@@ -69,6 +69,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
+    
     z-index: 100;
     position: absolute;
     top: 100%;
@@ -80,7 +81,7 @@ body {
 
 #menu ul ul li {
     position: relative;
-    border-bottom: 3px solid #2a2a2a;
+    border-bottom: 5px solid #2a2a2a;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;

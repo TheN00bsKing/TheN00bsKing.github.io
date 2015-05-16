@@ -49,6 +49,9 @@
 	<script src="bower_components/jquery-waypoints/shortcuts/sticky-elements/waypoints-sticky.js"></script>
 	<script type="text/javascript">
         $(document).ready(function() {
+			$("#menu").waypoint('sticky');
+		});
+        $(document).ready(function() {
             $("#handle").click(function() {
                 $("#menu ul:first").slideToggle();
             });
@@ -59,10 +62,4 @@
             }); 
         });
 	</script>
-	<script>
-		$(document).ready(function() {
-			$("#menu").waypoint('sticky');
-		});
-	</script>
-
 </html>
