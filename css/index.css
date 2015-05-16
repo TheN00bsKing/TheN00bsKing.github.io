@@ -125,6 +125,22 @@ body {
     transition: 0.3s;
 }
 
+#menu ul div {
+    position: absolute;
+    right: 0px;
+    padding-right: 5%;
+    height: 0px;
+    opacity: 0;
+    -webkit-transition: 0.5s height, 0.5s opacity;
+    -o-transition: 0.5s height, 0.5s opacity;
+    transition: 0.5s height, 0.5s opacity;
+    overflow: hidden;
+}
+
+#menu ul div img {
+    padding: 3px;
+}
+
 #menu li:hover {
     border-color: #bf0007;
 	color: #fff;
@@ -154,9 +170,16 @@ body {
     top: 0;
 }
 
+#menu.stuck > ul div {
+    height: 53px;
+    opacity: 1;
+}
+
+#menu.stuck > ul li {
+    padding: 15px 30px;
+}
 
 /*-- media query --*/
-
 @media screen and (max-width: 765px){
     #header {
         height: 220px;
@@ -201,6 +224,11 @@ body {
     #menu ul li:hover > ul {
         display: none;
     }
+    
+    #menu.stuck > ul div {
+    height: 0px;
+    opacity: 0;
+}
     
     #menu ul ul {
         position: relative;
