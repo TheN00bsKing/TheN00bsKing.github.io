@@ -62,11 +62,9 @@ body {
 
 
 /*-- submenu--*/
-.submenu {
-    position: ;
+.submenu { 
 	background-color: #7b7b7b;
     overflow: hidden;
-    color: white;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -74,13 +72,13 @@ body {
     -o-transition:max-height 0.4s ;
     transition:max-height 0.4s ;
 	display: none;
+
 }
 
 .submenu li {
 	display: inline-block;
 	padding: 5px;
-    
-	border-bottom: 2px solid #575757;
+	border-bottom: 3px solid #575757;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
@@ -88,6 +86,7 @@ body {
 
 .menu li:hover {
 	border-bottom: 2px solid  #bf0007;
+	color: white
 }
 
 .menu li:hover > .submenu {
@@ -96,42 +95,12 @@ body {
 
 
 
-
 /*-- menu --*/
 .menu {
     background-color: #2a2a2a;
 	direction: rtl;
+	color: rgba(255, 255, 255, 0.42);
 
-}
-
-.menu ul{
-	background-color: #242424;
-    overflow: hidden;
-    color: rgba(255, 255, 255, 0.42);
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    -webkit-transition:max-height 0.4s ;
-    -o-transition:max-height 0.4s ;
-    transition:max-height 0.4s ;
-}
-
-.menu ul li{
-   display: inline-block;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px;
-    padding-bottom: 10px;
-	border-bottom: 5px solid #575757;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.menu ul li:hover{
-	border-bottom: 5px solid  #bf0007;
-	color: white;
-    
 }
 
 .menu a{
@@ -142,6 +111,39 @@ body {
 
 
 
+/*-- mainmenu --*/
+.mainmenu{
+	background-color: #242424;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    -webkit-transition:max-height 0.4s ;
+    -o-transition:max-height 0.4s ;
+    transition:max-height 0.4s ;
+}
+
+.mainmenu li{
+   display: inline-block;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+	border-bottom: 0.4em solid #575757;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.mainmenu li:hover{
+	border-bottom: 0.4em solid #bf0007;
+	color: white;
+    
+}
+
+
+
+/*-- handle --*/
 .handle{
     width: 100%;
     padding: 10px;
