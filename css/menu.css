@@ -114,37 +114,40 @@
     padding: 15px 30px;
 }
 
+
 @media screen and (max-width: 765px){
-    #menu ul {
-        display: none;
-    }
+ #menu{
+	 display: none;
+ }
 	
-	#menu ul li {
-        width: 100%;
-        box-sizing: border-box;
-		padding: 15px;
-    }
+.page-content{
+	position: relative;
+	z-index: 0;
+}
 	
-    #handle {
-        display: block;
-    }
-    
-    #menu a {
-        font-size: 16px;
-    }
-    
-    /*-- sticky --*/
-    #menu.stuck > ul div {
-    height: 0px;
-    opacity: 0;
+.sidebar{
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0px;
+  left: 0px;
+  width: 120px;
+  padding: 30px;
+  background-color: #2a2a2a;
+  z-index: 0;
 }
-    
-    #menu ul ul {
-        position: relative;
-        z-index: auto;
-        width: 100%;
-        margin-top: 10px;
-        top: auto;
-        margin-right: 0px;
-    }
+	
+.sidebar li{
+	color: white
 }
+	
+	
+}
+
+@media screen and (max-width: 1100px){
+	#menu.stuck > ul div {
+		height: 0px;
+		opacity: 0;
+	}
+}
+

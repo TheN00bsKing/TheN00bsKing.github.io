@@ -59,6 +59,10 @@ body {
 
 }
 
+#mobile{
+	display: none;
+}
+
 /*-- media query --*/
 @media screen and (max-width: 765px){
     #header {
@@ -70,17 +74,36 @@ body {
     }
     
     #logo {
-        width: 50%;
+        width:50%;
+		padding-top: 70px;
     }
     
-    #logo img {
-        margin-top: 70px;
+    #logo img  {
+        margin:0;
     }
-    
+	
     .arrow {
         padding: 20px;
         margin-top: -100px;
         font-size: 10px;
     }
-    
+	
+	#desktop{
+		display: block;
+	}
 }
+
+@media screen and (max-width: 400px){
+	#mobile{
+		display: block;
+	}
+	
+	#desktop{
+		display: none;
+	}
+	
+	#logo{
+		padding-top: 35px;
+	}
+}
+
