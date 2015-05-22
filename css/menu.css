@@ -46,7 +46,11 @@
     padding: 3px;
 }
 
-#menu li:hover {
+#menu ul ul li :hover{
+	color: white;
+}
+
+#menu ul li:hover {
     border-color: #bf0007;
 	color: #fff;
 }
@@ -54,7 +58,7 @@
 /*-- submenu--*/
 #menu ul ul {
     display: none;
-    background-color: #7b7b7b;
+    background-color: #313131;
     overflow: hidden;
     padding: 0;
     margin: 0;
@@ -62,23 +66,19 @@
     z-index: 100;
     position: absolute;
     top: 100%;
-    margin-right: -38px;
+    margin-right: -30px;
 }
 
 #menu ul ul li {
 	display: block;
-    border-bottom: 5px solid #2a2a2a;
     position:relative;
-    -webkit-transition: 0.3s;
+	padding: 5px;
+	color: #7b7b7b;
+	 -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
 
-#menu ul ul li a {
-    padding: 5px;
-    color: inherit;
-	color: white;
-}
 
 /*-- handle --*/
 #handle{
@@ -97,33 +97,41 @@
 	right: 0px;
     padding: 0px 30px;
 }
-
+/*-- sticky --*/
 #menu.stuck{
 	width: 100%;
 	position: fixed;
     top: 0;
+	opacity: 0.9;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s ;
+	transition: 0.3s ;
 }
 
-/*-- sticky --*/
+#menu.stuck:hover{
+	opacity: 1;
+}
+
 #menu.stuck > ul div {
     height: 53px;
     opacity: 1;
+	
 }
 
 #menu.stuck > ul li {
     padding: 15px 30px;
 }
 
-
 @media screen and (max-width: 765px){
     #menu ul {
         display: none;
     }
-	
+
 	#menu ul li {
         width: 100%;
         box-sizing: border-box;
 		padding: 15px;
+		border: none;
     }
 	
     #handle {
@@ -147,8 +155,17 @@
         margin-top: 10px;
         top: auto;
         margin-right: 0px;
+		border: none;
     }
+	
+	 #menu ul ul li {
+		 border: none;
+	 }
+	#menu ul li i{
+		display: none;
+	}
 }
+
 
 @media screen and (max-width: 1100px){
 	#menu.stuck > ul div {
