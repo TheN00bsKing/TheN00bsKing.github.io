@@ -72,7 +72,10 @@
 #menu ul ul li {
 	display: block;
     position:relative;
-	padding: 5px;
+	padding-left: 0.7em;
+	padding-right: 0.7em;
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
 	color: #7b7b7b;
 	 -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -121,6 +124,7 @@
 #menu.stuck > ul li {
     padding: 15px 30px;
 }
+
 
 @media screen and (max-width: 765px){
     #menu ul {
