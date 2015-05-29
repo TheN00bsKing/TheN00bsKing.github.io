@@ -28,7 +28,8 @@ body {
 
 .arrow {
     position: absolute;
-    margin-top: -150px;
+    top: 225px;
+    transform: translateY(-50%);
     padding: 40px;
 }
 
@@ -51,16 +52,17 @@ body {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
-
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#logo img {
-    margin-top: 140px;
-
+#logo img.logoL {
+    display: none;
 }
 
-#mobile{
-	display: none;
+#Logo img.logoS {
+    display: block;
 }
 
 /*-- media query --*/
@@ -75,7 +77,6 @@ body {
     
     #logo {
         width:50%;
-		padding-top: 70px;
     }
     
     #logo img  {
@@ -84,26 +85,16 @@ body {
 	
     .arrow {
         padding: 20px;
-        margin-top: -100px;
+        top: 110px;
         font-size: 10px;
     }
-	
-	#desktop{
-		display: block;
-	}
-}
-
-@media screen and (max-width: 400px){
-	#mobile{
-		display: block;
-	}
-	
-	#desktop{
-		display: none;
-	}
-	
-	#logo{
-		padding-top: 35px;
-	}
+    
+    #logo img.logoS {
+        display: none;
+    }
+    
+    #logo img.logoL {
+        display: block;
+    }
 }
 
