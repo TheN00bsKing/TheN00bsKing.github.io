@@ -1,0 +1,14 @@
+#mPlayer {
+    position: absolute;
+    z-index: 902;
+    width: 100%;
+    height: auto;
+    bottom: 0px;
+    border-bottom: #f50 5px solid
+}
+
+#mPlayer i {
+    float: right;
+    color: #f50;
+    padding: 10px;
+}
