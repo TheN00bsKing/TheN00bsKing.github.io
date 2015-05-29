@@ -1,6 +1,5 @@
 /*-- menu --*/
 #menu {
-    background-color: #2a2a2a;
 	direction: rtl;
     position: relative;
 	color: #7b7b7b;
@@ -30,6 +29,11 @@
     transition: 0.3s;
 }
 
+#menu ul li:hover {
+    border-color: #bf0007;
+	color: #fff;
+}
+
 #menu ul div {
     position: absolute;
     right: 0px;
@@ -46,20 +50,9 @@
     padding: 3px;
 }
 
-#menu ul ul li :hover{
-	color: white;
-}
-
-#menu ul li:hover {
-    border-color: #bf0007;
-	color: #fff;
-}
-
 /*-- submenu--*/
 #menu ul ul {
     display: none;
-    background-color: #313131;
-    overflow: hidden;
     padding: 0;
     margin: 0;
     text-align: center;
@@ -71,7 +64,7 @@
 
 #menu ul ul li {
 	display: block;
-    position:relative;
+    position: relative;
 	padding-left: 1.9em;
 	padding-right: 1.7em;
 	color: #7b7b7b;
@@ -80,17 +73,22 @@
     transition: 0.3s;
 }
 
+#menu ul ul li:hover{
+	color: #fff;
+}
 
 /*-- handle --*/
 #handle{
+    background-color: #242424;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
     font-size: 20px;
-    color: white;
+    color: #fff;
     display: none;
     text-align: center;
+    
 }
 
 #handle i {
@@ -133,7 +131,6 @@
         width: 100%;
         box-sizing: border-box;
 		padding: 15px;
-		border: none;
     }
 	
     #handle {
@@ -148,7 +145,7 @@
     #menu.stuck > ul div {
     height: 0px;
     opacity: 0;
-}
+    }
     
     #menu ul ul {
         position: relative;
@@ -157,13 +154,10 @@
         margin-top: 10px;
         top: auto;
         margin-right: 0px;
-		border: none;
+        background-color: #424242;
     }
-	
-	 #menu ul ul li {
-		 border: none;
-	 }
-	#menu ul li i{
+    
+	#menu ul li i {
 		display: none;
 	}
 }
