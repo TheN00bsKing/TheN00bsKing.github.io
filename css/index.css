@@ -54,7 +54,6 @@ body {
     margin-left: auto;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
 }
 
 #logo img.logoL {
@@ -77,6 +76,7 @@ body {
     
     #logo {
         width:50%;
+		padding-top: 70px;
     }
     
     #logo img  {
