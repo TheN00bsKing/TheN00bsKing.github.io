@@ -1,14 +1,20 @@
 #mPlayer {
-    position: absolute;
+    position: fixed;
     z-index: 902;
     width: 100%;
     height: auto;
     bottom: 0px;
-    border-bottom: #f50 5px solid
+    border-bottom: #f50 5px solid;
+    direction: ltr;
 }
 
 #mPlayer i {
     float: right;
     color: #f50;
     padding: 10px;
+    cursor: pointer;
+}
+
+#mPlayer iframe {
+    display: none;
 }
