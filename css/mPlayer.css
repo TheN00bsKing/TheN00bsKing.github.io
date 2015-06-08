@@ -8,13 +8,43 @@
     direction: ltr;
 }
 
-#mPlayer i {
-    float: right;
+#mPlayer #controls {
+    position: relative;
+    z-index: 1903;
+}
+
+#mPlayer #controls i {
     color: #f50;
     padding: 10px;
     cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+}
+
+#mPlayer #controls .play {
+    right: 0px;
+}
+
+#mPlayer #controls .extend {
+    left: 0px;
+    display: none;
 }
 
 #mPlayer iframe {
     display: none;
+    margin-bottom: -4px;
+    max-height: 700px;
+    -webkit-transition: 1s height;
+    -o-transition: 1s height;
+    transition: 1s height;
+}
+
+#mPlayer .expand {
+    height: 90vh;
+}
+
+@media screen and (max-width: 765px){
+    #mPlayer iframe {
+        height: 60px;
+    }
 }
