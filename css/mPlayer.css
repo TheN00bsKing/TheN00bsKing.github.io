@@ -18,16 +18,28 @@
     padding: 10px;
     cursor: pointer;
     position: absolute;
-    bottom: 0px;
+    bottom: 15px;
 }
 
 #mPlayer #controls .play {
+    font-size: 80px;
     right: 0px;
 }
 
 #mPlayer #controls .extend {
+    font-size: 40px;
     left: 0px;
     display: none;
+}
+
+#mPlayer #volume {
+    position: relative;
+    padding: 40px;
+    width: 90%;
+}
+
+#mPlayer #volume div {
+    width: 90%;
 }
 
 #mPlayer iframe {
@@ -46,5 +58,20 @@
 @media screen and (max-width: 765px){
     #mPlayer iframe {
         height: 60px;
+    }
+    #mPlayer .play {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #mPlayer iframe {
+        height: 20px;
+    }
+    #mPlayer .play {
+        font-size: 30px;
+    }
+    #mPlayer .extend {
+        font-size: 30px;
     }
 }
