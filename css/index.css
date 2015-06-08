@@ -29,7 +29,6 @@ body {
 .arrow {
     position: absolute;
     top: 225px;
-    transform: translateY(-50%);
     padding: 40px;
 }
 
@@ -39,21 +38,8 @@ body {
     opacity: 0.7;
 }
 
-#arrowLeft {
-    left: 0px;
-}
-
-#arrowRight {
-    right: 0px;
-}
-
-
 #logo {
     width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    position: relative;
-    top: 30%;
 }
 
 #logo img.logoL {
@@ -76,7 +62,6 @@ body {
     
     #logo {
         width:40%;
-		top: 13%;
     }
     
     #logo img  {
@@ -85,7 +70,7 @@ body {
 	
     .arrow {
         padding: 20px;
-        top: 110px;
+        top: 10%;
         font-size: 10px;
     }
     
@@ -96,10 +81,4 @@ body {
     #logo img.logoL {
         display: block;
     }
-}
-
-@media screen and (max-width: 400px){
-	#logo{
-		top: 20%;
-	}
 }

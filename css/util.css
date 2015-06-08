@@ -1,0 +1,20 @@
+.v-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.h-align {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.r-align {
+    right: 0px;
+}
+
+.l-align {
+    left: 0px;
+}
