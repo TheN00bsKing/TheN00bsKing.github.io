@@ -50,6 +50,10 @@
     padding: 3px;
 }
 
+#menu .current {
+    border-color: #bf0007;
+}
+
 /*-- submenu--*/
 #menu ul ul {
     display: none;

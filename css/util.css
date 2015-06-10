@@ -1,3 +1,14 @@
+::selection {
+  background: #ff999c; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ff999c; /* Gecko Browsers */
+}
+
+body {
+    font-family: sans-serif;
+}
+
 .v-align {
     position: relative;
     top: 50%;
@@ -18,3 +29,4 @@
 .l-align {
     left: 0px;
 }
+
