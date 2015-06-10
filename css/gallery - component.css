@@ -171,7 +171,7 @@ body {
 /* Navigation */
 .slideshow nav span {
 	position: fixed;
-	z-index: 1000;
+	z-index: 501;
 	color: #ffffff;
 	text-align: center;
 	padding: 3%;

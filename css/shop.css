@@ -13,34 +13,36 @@ body {
     direction: rtl;
     right: 0px;
     color: #fff;
-    top: -67px;
+    margin: 0px;
     margin-right: 10%;
     padding: 42.5px;
     font-size: 100px;
     font-family: sans-serif;
     position: absolute;
     cursor: default;
+    overflow: hidden;
 }
 
 #info {
-    background: #7d7d7d;
-    direction:rtl;
+    background: #ccc;
+    direction: rtl;
     width: 100%;
     height: 390px;
 }
 
 #info iframe {
-    height: 350px;
     width: 400px;
+    height: 350px;
     padding: 20px;
-    left: 0px;
-    position: absolute;
+    float: left;
 }
 
 #info p {
     margin: 0px;
-    margin-right: 20px;
     padding: 20px;
+    margin-right: 20px;
+    width: auto;
+    max-width: 90%;
     font-size: 30px;
 }
 
@@ -51,4 +53,28 @@ body {
 
 #info strong:after {
     content: ": "
+}
+
+@media screen and (max-width: 765px) {
+    #header {
+        height: 100px;
+    }
+    #header h1 {
+        font-size: 50px;
+        padding: 21px;
+    }
+    #info iframe {
+        width: 95%;
+        height: 200px;
+        padding: 2.5%;
+    }
+    #info p {
+        font-size: 20px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    #info strong {
+        border-right-width: 7px;
+        padding-right: 10px;
+    }
 }

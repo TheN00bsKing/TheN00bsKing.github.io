@@ -60,7 +60,7 @@
     padding: 0;
     margin: 0;
     text-align: center;
-    z-index: 100;
+    z-index: auto;
     position: absolute;
     top: 100%;
     margin-right: -36px;
@@ -106,9 +106,10 @@
 	width: 100%;
 	position: fixed;
     top: 0;
+    border-bottom: #242424 solid 10px;
 	-webkit-transition: 0.3s;
-	-o-transition: 0.3s ;
-	transition: 0.3s ;
+	-o-transition: 0.3s;
+	transition: 0.3s;
 }
 
 #menu.stuck > ul div {
