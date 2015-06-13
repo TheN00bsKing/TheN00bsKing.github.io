@@ -35,7 +35,8 @@
 #mPlayer #volume {
     position: relative;
     padding: 40px;
-    width: 90%;
+    width: 50vh;
+    margin: 0px auto;
 }
 
 #mPlayer #volume div {
