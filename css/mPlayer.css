@@ -37,10 +37,21 @@
     padding: 40px;
     width: 50vh;
     margin: 0px auto;
+    display: none;
 }
 
 #mPlayer #volume div {
-    width: 90%;
+    width: 0px;
+    display: none;
+    -webkit-transition: 1s width;
+    -o-transition: 1s width;
+    transition: 1s width;
+    
+}
+
+#mPlayer #volume:hover div {
+    width: 400px;
+    display: block;
 }
 
 #mPlayer iframe {

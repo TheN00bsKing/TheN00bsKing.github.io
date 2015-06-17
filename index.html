@@ -72,14 +72,17 @@
                         widget.getCurrentSound(function(currentSound) {
                         });
                     });
-                    // get current level of volume
-                    widget.getVolume(function(volume) {
-                    });
                     // set new volume level
                     $("#SC-volume").on("slide", function(event, ui) {
                         widget.setVolume(ui.value / 100);
                     })
-                    // get the value of the current position
+                    //toggle volume button
+                    widget.bind(SC.Widget.Events.PLAY, function() {
+                       $("#mPlayer #volume").fadeIn();
+                    });
+                    widget.bind(SC.Widget.Events.PAUSE , function() {
+                       $("#mPlayer #volume").fadeOut();
+                    });
                 });
             }());
             $("#SC-volume").slider({
