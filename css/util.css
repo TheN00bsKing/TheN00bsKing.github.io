@@ -1,12 +1,13 @@
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
 ::selection {
   background: #ff999c; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
   background: #ff999c; /* Gecko Browsers */
-}
-
-body {
-    font-family: sans-serif;
 }
 
 .v-align {

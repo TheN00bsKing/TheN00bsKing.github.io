@@ -1,28 +1,3 @@
-body {
-    margin: 0px;
-}
-
-#header {
-    overflow: auto;
-    background: #bf0007;
-    width: 100%;
-    height: 200px;
-}
-
-#header h1 {
-    direction: rtl;
-    right: 0px;
-    color: #fff;
-    margin: 0px;
-    margin-right: 10%;
-    padding: 42.5px;
-    font-size: 100px;
-    font-family: sans-serif;
-    position: absolute;
-    cursor: default;
-    overflow: hidden;
-}
-
 #info {
     background: #ccc;
     direction: rtl;
