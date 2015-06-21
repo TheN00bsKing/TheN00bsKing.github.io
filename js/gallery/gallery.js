@@ -16,7 +16,10 @@ function printSlideshow() {
     'use strict';
     var slide = "", i;
     for (i = 0; i < images.length; i++) {
-        slide += "<li> <figure> <figcaption> <h3>" + images[i].title + "</h3> <p>" + images[i].description + "</p> </figcaption> <img src='images/gallery/" + images[i].image + "' /> </figure> </li>";
+        slide += "<li> <figure> <figcaption> <h3>" + images[i].title + "</h3> <p>" + images[i].description + "</p> </figcaption> <img src='";
+        if(!images[i].image.indexOf("https://") == 0 && !images[i].image.indexOf("http://") == 0)
+            slide += "images/gallery/";
+        slide += images[i].image + "' /> </figure> </li>";
     }
     document.getElementById("slideshow").innerHTML = slide;
 }
