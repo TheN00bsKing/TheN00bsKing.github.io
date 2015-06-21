@@ -4,7 +4,10 @@ function printGallery() {
     'use strict';
     var grid = "<li class='grid-sizer'></li>", i;
     for (i = 0; i < images.length; i++) {
-        grid += "<li> <figure> <img src='images/gallery/" + images[i].image + "' /> <figcaption> <h3>" + images[i].title + "</h3> <p>" + images[i].description + "</p> </figcaption> </figure> </li>";
+        grid += "<li> <figure> <img src='";
+        if(!images[i].image.indexOf("https://") == 0 && !images[i].image.indexOf("http://") == 0)
+            grid += "images/gallery/";
+        grid += images[i].image + "' /> <figcaption> <h3>" + images[i].title + "</h3> <p>" + images[i].description + "</p> </figcaption> </figure> </li>";
     }
     document.getElementById("grid").innerHTML = grid;
 }
