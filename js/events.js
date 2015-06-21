@@ -22,7 +22,7 @@ function getEvents() {
             if (response && !response.error) {
                 for (var i = 0; i < response.data.length; i++) {
                     var event = response.data[i];
-                    $("#grid").append(event.name + "<br>");
+                    $("#grid").append("<br>" + event.name);
                 }
             } else {
                 alert(response.error.message);
