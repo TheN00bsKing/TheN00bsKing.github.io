@@ -18,3 +18,13 @@
     cursor: default;
     overflow: hidden;
 }
+
+@media screen and (max-width: 765px) {
+    #header {
+        height: 100px;
+    }
+    #header h1 {
+        font-size: 50px;
+        padding: 21px;
+    }
+}
