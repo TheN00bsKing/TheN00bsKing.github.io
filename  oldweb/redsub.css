@@ -1,0 +1,126 @@
+Body{
+direction:rtl;
+}
+
+
+
+.innerBody{
+	background-color: #000000;
+	margin : 10px;
+	direction : 'ltr';
+}
+.header{
+	font-size: 22px;
+	font-weight : 'bold';
+	color: #CCCCCC;
+}
+.subheader{
+	font-size: 14px;
+	font-weight : 'bold';
+	color: #FFFFFF;
+}
+.content{
+	direction : 'rtl';
+	font-family : 'Arial';
+	color: #FFFFFF;
+	font-size: 12px;
+}
+a{
+	color: #FF0000;
+}
+a:hover{
+	color: #FF6600;
+	text-decoration: 'none';
+}
+a.biglink{
+	color: #FF0000;
+	font-size: 22px;
+}
+a.bandlink{
+	color: #FFFFFF;
+	font-size: 15px;
+	text-decoration: none;
+}
+td{
+	direction : 'rtl';
+	font-family : 'Arial';
+	color: #FFFFFF;
+	font-size: 12px;
+}
+pre{
+	direction : 'rtl';
+	font-family : 'Arial';
+	color: #FFFFFF;
+	font-size: 12px;
+}
+
+.myTable{
+	border-style: solid;
+	border-color: '#FFFFFF';
+	border-width: 1px;
+}
+td.tableHD{
+	border-style: solid;
+	border-color: '#FFFFFF';
+	border-width: 1px;
+	padding: 5px;
+	background-color: #656565;
+}
+td.tableTD{
+	border-style: solid;
+	border-color: '#FFFFFF';
+	border-width: 1px;
+	padding: 5px;
+	background-color: #343434;
+}
+.footer{
+	text-align: center;
+	color: #545454;
+}
+.footerLink{
+	color: #545454;
+}
+
+.bandTable{
+	border-style: solid;
+	border-color: '#777777';
+	border-width: 1px;
+	padding: 5px;
+	background-color: #343434;
+}
+.songLink{
+	color: #fdd564;
+	text-decoration: none;
+	font-weight: bold;
+}
+.newSongsHolder{
+	background-color: #ac1701;
+	border-bottom: 1px solid #000000;
+	height: 66px;
+	padding: 6px;
+}
+
+.newSongsHeader{
+	background-color: #8a0000;
+	color: #000000;
+	font-weight: bold;
+	font-size: 15px;
+	padding-right: 10px;
+	border-bottom: 1px solid #000000;
+	height: 27px;
+}
+.newSongsHeader2{
+	background-color: #8a0000;
+	color: #000000;
+	font-weight: bold;
+	font-size: 15px;
+}
+.galleryHeader{
+	background-color: #6c5454;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 15px;
+	padding-right: 10px;
+	border-bottom: 1px solid #000000;
+	height: 27px;
+}

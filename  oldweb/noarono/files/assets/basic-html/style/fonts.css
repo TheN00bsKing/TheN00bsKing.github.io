@@ -1,0 +1,1189 @@
+﻿
+        .font1 {
+        font-size: 16px;
+        font-family: "FoodiFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font1 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font1 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font1 a:visited {
+        color: #900060;
+        }
+      
+        .font2 {
+        font-size: 10px;
+        font-family: "NarkisBlockMF";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font2 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font2 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font2 a:visited {
+        color: #900060;
+        }
+      
+        .font3 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #D8BB7E ;
+        opacity: 1 ;
+        }
+        .font3 a {
+        text-decoration: none;
+        color: #D8BB7E;
+        }
+        .font3 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font3 a:visited {
+        color: #900060;
+        }
+      
+        .font4 {
+        font-size: 18px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font4 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font4 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font4 a:visited {
+        color: #900060;
+        }
+      
+        .font5 {
+        font-size: 13px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font5 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font5 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font5 a:visited {
+        color: #900060;
+        }
+      
+        .font6 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #D8BB7E ;
+        opacity: 1 ;
+        }
+        .font6 a {
+        text-decoration: none;
+        color: #D8BB7E;
+        }
+        .font6 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font6 a:visited {
+        color: #900060;
+        }
+      
+        .font7 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #A3000B ;
+        opacity: 1 ;
+        }
+        .font7 a {
+        text-decoration: none;
+        color: #A3000B;
+        }
+        .font7 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font7 a:visited {
+        color: #900060;
+        }
+      
+        .font8 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #D6000E ;
+        opacity: 1 ;
+        }
+        .font8 a {
+        text-decoration: none;
+        color: #D6000E;
+        }
+        .font8 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font8 a:visited {
+        color: #900060;
+        }
+      
+        .font9 {
+        font-size: 46px;
+        font-family: "MeargenFOT";
+        color: #F78C86 ;
+        opacity: 1 ;
+        }
+        .font9 a {
+        text-decoration: none;
+        color: #F78C86;
+        }
+        .font9 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font9 a:visited {
+        color: #900060;
+        }
+      
+        .font10 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #F78C86 ;
+        opacity: 1 ;
+        }
+        .font10 a {
+        text-decoration: none;
+        color: #F78C86;
+        }
+        .font10 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font10 a:visited {
+        color: #900060;
+        }
+      
+        .font11 {
+        font-size: 12.6px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font11 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font11 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font11 a:visited {
+        color: #900060;
+        }
+      
+        .font12 {
+        font-size: 29px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font12 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font12 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font12 a:visited {
+        color: #900060;
+        }
+      
+        .font13 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #56ADBD ;
+        opacity: 1 ;
+        }
+        .font13 a {
+        text-decoration: none;
+        color: #56ADBD;
+        }
+        .font13 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font13 a:visited {
+        color: #900060;
+        }
+      
+        .font14 {
+        font-size: 10px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font14 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font14 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font14 a:visited {
+        color: #900060;
+        }
+      
+        .font15 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #65C4D3 ;
+        opacity: 1 ;
+        }
+        .font15 a {
+        text-decoration: none;
+        color: #65C4D3;
+        }
+        .font15 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font15 a:visited {
+        color: #900060;
+        }
+      
+        .font16 {
+        font-size: 10px;
+        font-family: "NarkisBlockMF";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font16 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font16 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font16 a:visited {
+        color: #900060;
+        }
+      
+        .font17 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #E6AD60 ;
+        opacity: 1 ;
+        }
+        .font17 a {
+        text-decoration: none;
+        color: #E6AD60;
+        }
+        .font17 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font17 a:visited {
+        color: #900060;
+        }
+      
+        .font18 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #FDEA01 ;
+        opacity: 1 ;
+        }
+        .font18 a {
+        text-decoration: none;
+        color: #FDEA01;
+        }
+        .font18 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font18 a:visited {
+        color: #900060;
+        }
+      
+        .font19 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #E2792E ;
+        opacity: 1 ;
+        }
+        .font19 a {
+        text-decoration: none;
+        color: #E2792E;
+        }
+        .font19 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font19 a:visited {
+        color: #900060;
+        }
+      
+        .font20 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #E2792E ;
+        opacity: 1 ;
+        }
+        .font20 a {
+        text-decoration: none;
+        color: #E2792E;
+        }
+        .font20 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font20 a:visited {
+        color: #900060;
+        }
+      
+        .font21 {
+        font-size: 47px;
+        font-family: "NarkisBlockMF";
+        color: #56ADBD ;
+        opacity: 1 ;
+        }
+        .font21 a {
+        text-decoration: none;
+        color: #56ADBD;
+        }
+        .font21 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font21 a:visited {
+        color: #900060;
+        }
+      
+        .font22 {
+        font-size: 12.6px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font22 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font22 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font22 a:visited {
+        color: #900060;
+        }
+      
+        .font23 {
+        font-size: 13.6px;
+        font-family: "NarkisBlockMF";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font23 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font23 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font23 a:visited {
+        color: #900060;
+        }
+      
+        .font24 {
+        font-size: 14.0px;
+        font-family: "HelveticaNeueLTStd";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font24 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font24 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font24 a:visited {
+        color: #900060;
+        }
+      
+        .font25 {
+        font-size: 50px;
+        font-family: "NarkisBlockMF";
+        color: #FC660A ;
+        opacity: 1 ;
+        }
+        .font25 a {
+        text-decoration: none;
+        color: #FC660A;
+        }
+        .font25 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font25 a:visited {
+        color: #900060;
+        }
+      
+        .font26 {
+        font-size: 12px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font26 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font26 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font26 a:visited {
+        color: #900060;
+        }
+      
+        .font27 {
+        font-size: 15.6px;
+        font-family: "NarkisBlockMF";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font27 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font27 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font27 a:visited {
+        color: #900060;
+        }
+      
+        .font28 {
+        font-size: 29px;
+        font-family: "MeargenFOT";
+        color: #FAA358 ;
+        opacity: 1 ;
+        }
+        .font28 a {
+        text-decoration: none;
+        color: #FAA358;
+        }
+        .font28 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font28 a:visited {
+        color: #900060;
+        }
+      
+        .font29 {
+        font-size: 13px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font29 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font29 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font29 a:visited {
+        color: #900060;
+        }
+      
+        .font30 {
+        font-size: 12px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font30 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font30 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font30 a:visited {
+        color: #900060;
+        }
+      
+        .font31 {
+        font-size: 47px;
+        font-family: "NarkisBlockMF";
+        color: #EB1995 ;
+        opacity: 1 ;
+        }
+        .font31 a {
+        text-decoration: none;
+        color: #EB1995;
+        }
+        .font31 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font31 a:visited {
+        color: #900060;
+        }
+      
+        .font32 {
+        font-size: 16px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font32 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font32 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font32 a:visited {
+        color: #900060;
+        }
+      
+        .font33 {
+        font-size: 13px;
+        font-family: "PTSerif";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font33 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font33 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font33 a:visited {
+        color: #900060;
+        }
+      
+        .font34 {
+        font-size: 16.0px;
+        font-family: "WinSoftPro";
+        color: #634A4C ;
+        opacity: 1 ;
+        }
+        .font34 a {
+        text-decoration: none;
+        color: #634A4C;
+        }
+        .font34 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font34 a:visited {
+        color: #900060;
+        }
+      
+        .font35 {
+        font-size: 42px;
+        font-family: "NarkisBlockMF";
+        color: #005EA9 ;
+        opacity: 1 ;
+        }
+        .font35 a {
+        text-decoration: none;
+        color: #005EA9;
+        }
+        .font35 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font35 a:visited {
+        color: #900060;
+        }
+      
+        .font36 {
+        font-size: 12px;
+        font-family: "Ogen";
+        color: #009DC7 ;
+        opacity: 1 ;
+        }
+        .font36 a {
+        text-decoration: none;
+        color: #009DC7;
+        }
+        .font36 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font36 a:visited {
+        color: #900060;
+        }
+      
+        .font37 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #B32C29 ;
+        opacity: 1 ;
+        }
+        .font37 a {
+        text-decoration: none;
+        color: #B32C29;
+        }
+        .font37 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font37 a:visited {
+        color: #900060;
+        }
+      
+        .font38 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #D35345 ;
+        opacity: 1 ;
+        }
+        .font38 a {
+        text-decoration: none;
+        color: #D35345;
+        }
+        .font38 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font38 a:visited {
+        color: #900060;
+        }
+      
+        .font39 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #E2000F ;
+        opacity: 1 ;
+        }
+        .font39 a {
+        text-decoration: none;
+        color: #E2000F;
+        }
+        .font39 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font39 a:visited {
+        color: #900060;
+        }
+      
+        .font40 {
+        font-size: 13px;
+        font-family: "MaarivS";
+        color: #FC660A ;
+        opacity: 1 ;
+        }
+        .font40 a {
+        text-decoration: none;
+        color: #FC660A;
+        }
+        .font40 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font40 a:visited {
+        color: #900060;
+        }
+      
+        .font41 {
+        font-size: 18px;
+        font-family: "MeargenFOT";
+        color: #D6000E ;
+        opacity: 1 ;
+        }
+        .font41 a {
+        text-decoration: none;
+        color: #D6000E;
+        }
+        .font41 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font41 a:visited {
+        color: #900060;
+        }
+      
+        .font42 {
+        font-size: 49px;
+        font-family: "NarkisBlockMF";
+        color: #002D78 ;
+        opacity: 1 ;
+        }
+        .font42 a {
+        text-decoration: none;
+        color: #002D78;
+        }
+        .font42 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font42 a:visited {
+        color: #900060;
+        }
+      
+        .font43 {
+        font-size: 18px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font43 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font43 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font43 a:visited {
+        color: #900060;
+        }
+      
+        .font44 {
+        font-size: 12px;
+        font-family: "MaarivS";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font44 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font44 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font44 a:visited {
+        color: #900060;
+        }
+      
+        .font45 {
+        font-size: 50px;
+        font-family: "NarkisBlockMF";
+        color: #A4340D ;
+        opacity: 1 ;
+        }
+        .font45 a {
+        text-decoration: none;
+        color: #A4340D;
+        }
+        .font45 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font45 a:visited {
+        color: #900060;
+        }
+      
+        .font46 {
+        font-size: 18px;
+        font-family: "MeargenFOT";
+        color: #AA562E ;
+        opacity: 1 ;
+        }
+        .font46 a {
+        text-decoration: none;
+        color: #AA562E;
+        }
+        .font46 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font46 a:visited {
+        color: #900060;
+        }
+      
+        .font47 {
+        font-size: 12.6px;
+        font-family: "MaarivS";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font47 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font47 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font47 a:visited {
+        color: #900060;
+        }
+      
+        .font48 {
+        font-size: 18px;
+        font-family: "MeargenFOT";
+        color: #003415 ;
+        opacity: 1 ;
+        }
+        .font48 a {
+        text-decoration: none;
+        color: #003415;
+        }
+        .font48 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font48 a:visited {
+        color: #900060;
+        }
+      
+        .font49 {
+        font-size: 50px;
+        font-family: "NarkisBlockMF";
+        color: #003415 ;
+        opacity: 1 ;
+        }
+        .font49 a {
+        text-decoration: none;
+        color: #003415;
+        }
+        .font49 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font49 a:visited {
+        color: #900060;
+        }
+      
+        .font50 {
+        font-size: 48px;
+        font-family: "NarkisBlockMF";
+        color: #AA562E ;
+        opacity: 1 ;
+        }
+        .font50 a {
+        text-decoration: none;
+        color: #AA562E;
+        }
+        .font50 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font50 a:visited {
+        color: #900060;
+        }
+      
+        .font51 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #3F6EAD ;
+        opacity: 1 ;
+        }
+        .font51 a {
+        text-decoration: none;
+        color: #3F6EAD;
+        }
+        .font51 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font51 a:visited {
+        color: #900060;
+        }
+      
+        .font52 {
+        font-size: 12.6px;
+        font-family: "MaarivS";
+        color: #005EA9 ;
+        opacity: 1 ;
+        }
+        .font52 a {
+        text-decoration: none;
+        color: #005EA9;
+        }
+        .font52 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font52 a:visited {
+        color: #900060;
+        }
+      
+        .font53 {
+        font-size: 15px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font53 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font53 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font53 a:visited {
+        color: #900060;
+        }
+      
+        .font54 {
+        font-size: 12.6px;
+        font-family: "MeargenFOT";
+        color: #004495 ;
+        opacity: 1 ;
+        }
+        .font54 a {
+        text-decoration: none;
+        color: #004495;
+        }
+        .font54 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font54 a:visited {
+        color: #900060;
+        }
+      
+        .font55 {
+        font-size: 12.6px;
+        font-family: "MaarivS";
+        color: #D6000E ;
+        opacity: 1 ;
+        }
+        .font55 a {
+        text-decoration: none;
+        color: #D6000E;
+        }
+        .font55 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font55 a:visited {
+        color: #900060;
+        }
+      
+        .font56 {
+        font-size: 12.6px;
+        font-family: "MeargenFOT";
+        color: #A3000B ;
+        opacity: 1 ;
+        }
+        .font56 a {
+        text-decoration: none;
+        color: #A3000B;
+        }
+        .font56 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font56 a:visited {
+        color: #900060;
+        }
+      
+        .font57 {
+        font-size: 47px;
+        font-family: "MeargenFOT";
+        color: #004495 ;
+        opacity: 1 ;
+        }
+        .font57 a {
+        text-decoration: none;
+        color: #004495;
+        }
+        .font57 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font57 a:visited {
+        color: #900060;
+        }
+      
+        .font58 {
+        font-size: 12.6px;
+        font-family: "MaarivS";
+        color: #184181 ;
+        opacity: 1 ;
+        }
+        .font58 a {
+        text-decoration: none;
+        color: #184181;
+        }
+        .font58 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font58 a:visited {
+        color: #900060;
+        }
+      
+        .font59 {
+        font-size: 10px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font59 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font59 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font59 a:visited {
+        color: #900060;
+        }
+      
+        .font60 {
+        font-size: 29px;
+        font-family: "MeargenFOT";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font60 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font60 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font60 a:visited {
+        color: #900060;
+        }
+      
+        .font61 {
+        font-size: 48px;
+        font-family: "NarkisBlockMF";
+        color: #184181 ;
+        opacity: 1 ;
+        }
+        .font61 a {
+        text-decoration: none;
+        color: #184181;
+        }
+        .font61 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font61 a:visited {
+        color: #900060;
+        }
+      
+        .font62 {
+        font-size: 12px;
+        font-family: "NarkisBlockMF";
+        color: #000000 ;
+        opacity: 1 ;
+        }
+        .font62 a {
+        text-decoration: none;
+        color: #000000;
+        }
+        .font62 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font62 a:visited {
+        color: #900060;
+        }
+      
+        .font63 {
+        font-size: 33px;
+        font-family: "NarkisBlockMF";
+        color: #184181 ;
+        opacity: 1 ;
+        }
+        .font63 a {
+        text-decoration: none;
+        color: #184181;
+        }
+        .font63 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font63 a:visited {
+        color: #900060;
+        }
+      
+        .font64 {
+        font-size: 50.0px;
+        font-family: "NarkisBlockMF";
+        color: #FC7F08 ;
+        opacity: 1 ;
+        }
+        .font64 a {
+        text-decoration: none;
+        color: #FC7F08;
+        }
+        .font64 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font64 a:visited {
+        color: #900060;
+        }
+      
+        .font65 {
+        font-size: 13.7px;
+        font-family: "NarkisBlockMF";
+        color: #FFFFFF ;
+        opacity: 1 ;
+        }
+        .font65 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font65 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font65 a:visited {
+        color: #900060;
+        }
+      
+        .font66 {
+        font-size: 12.6px;
+        font-family: "MeargenFOT";
+        color: #FFFFFF ;
+        opacity: 0 ;
+        }
+        .font66 a {
+        text-decoration: none;
+        color: #FFFFFF;
+        }
+        .font66 a:hover {
+        text-decoration: none;
+        background-color: rgba(63,199,255,0.5);
+        }
+        .font66 a:visited {
+        color: #900060;
+        }
+      

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Songs>
+	<!-- http://www.sub-res.com/redsub/music/ -->
+	<Song sLabel="פריאל חורש וטל אבן צור - סתיו" sFile="radio/music/stav.mp3" />
+	<Song sLabel="The Last Lament - Thy Serpentine" sFile="radio/music/lament.mp3" />
+	<Song sLabel="עידו אוזן - אל תהיי עצובה" sFile="radio/music/ido.mp3" />
+	<Song sLabel="יהב מור – פנדורת חן" sFile="radio/music/pandora.mp3" />
+	<Song sLabel="Missing In Action - One Pure Concept" sFile="radio/music/onepure.mp3" />
+	<Song sLabel="Ovad -Last Thoughts " sFile="radio/music/ovad.mp3" />
+	<Song sLabel="200 Pounds - Fall Apart " sFile="radio/music/200.mp3" />
+	<Song sLabel="SniF - Here We Go Again" sFile="radio/music/snif.mp3" />
+	<Song sLabel="יהב מור - Snakes" sFile="radio/music/snakes.mp3" />
+	<Song sLabel="עידו אוזן – Cannot close My eyes" sFile="radio/music/ido2.mp3" />
+	<Song sLabel="הדר פנחס - כמה מוזר" sFile="radio/music/hadar.mp3" />
+	<Song sLabel="Ovad - InstruMetal No.2" sFile="radio/music/ovad2.mp3" />
+	<Song sLabel="שירה ערוסי – תאומות" sFile="radio/music/m-shira.mp3" />
+	<Song sLabel="סהר וייסמן – אין עוד מקום" sFile="radio/music/sahar.mp3" />
+    <Song sLabel="סהר וייסמן - המכתב" sFile="radio/music/sahar2.mp3" />
+	<Song sLabel="The Poppers – Lake Of Teras" sFile="radio/music/poppers.mp3" />
+	<Song sLabel="Dented Edge - Worth A Shot" sFile="radio/music/worth.mp3" />
+	<Song sLabel="יקי ברדוגו - קרובה" sFile="radio/music/krova.mp3" />
+	<Song sLabel="איתן סער – צוללת" sFile="radio/music/sub.mp3" />
+    <Song sLabel="The Poppers - Somewhere" sFile="radio/music/somewhere.mp3" />
+	<Song sLabel="Ovad - InstruMetal No.1" sFile="radio/music/ovad3.mp3" />
+	<Song sLabel="עידו אוזן – שישי בערב" sFile="radio/music/shishi.mp3" />
+	<Song sLabel="Missing In Action -No Illusions" sFile="radio/music/illustions.mp3" />
+	<Song sLabel="טל גומבוש - Run Away" sFile="radio/music/runaway.mp3" />
+	<Song sLabel="פריאל חורש וטל אבן צור - סתיו" sFile="radio/music/oldstav.mp3" />
+	<Song sLabel="פריאל חורש - Lizzy" sFile="radio/music/lizzi.mp3" />
+    <Song sLabel="Rocket – הכוכבים רוקדים על הירח" sFile="radio/music/rocket.mp3" />
+	<Song sLabel="Dented Edge - Herd" sFile="radio/music/herd.mp3" />
+	<Song sLabel="יקי ברדוגו - שום דבר" sFile="radio/music/davar.mp3" />
+	<Song sLabel="Hozat - אני קיפוד" sFile="radio/music/hozat.mp3" />
+	<Song sLabel="טל אבן-צור - פבל" sFile="radio/music/pavel.mp3" />
+	<Song sLabel="טל אבן-צור - פשוטניק" sFile="radio/music/tal2.mp3" />
+	<Song sLabel="Ovad – Melodic Blues In Bm" sFile="radio/music/ovad4.mp3" />
+	<Song sLabel="אורן יעקובי – SpLiT" sFile="radio/music/split.mp3" />
+	<Song sLabel="שגיא הררי - And Damage Increase" sFile="radio/music/sagie.mp3" />
+	<Song sLabel="Dented Edge - Mind Territory" sFile="radio/music/mind.mp3" />
+	<Song sLabel="שירה ערוסי - שלוש שנים" sFile="radio/music/3years.mp3" />
+	<Song sLabel="Ovad – Far Beyond The Universe" sFile="radio/music/ovad6.mp3" />
+	<Song sLabel="SniF - It's Not The End " sFile="radio/music/not the end.mp3" />
+	<Song sLabel="שגיא הררי -  A Synthetic Layer" sFile="radio/music/synthetic.mp3" />
+	<Song sLabel="רעות טיאר - בדידות מצמררת" sFile="radio/music/bdidot.mp3" />
+	<Song sLabel="רעות טיאר - השניה שמפרידה" sFile="radio/music/mafrida.mp3" />
+	<Song sLabel="רעות טיאר - פסיכית" sFile="radio/music/psycho.mp3" />
+	<Song sLabel="יהב מור – הלחי השנייה" sFile="radio/music/lechi.mp3" />
+	<Song sLabel="ענאל ששון - El cielo es siempre azul" sFile="radio/music/anael.mp3" />
+	<Song sLabel="אלעד רגב - סרט ישן" sFile="radio/music/regev2.mp3" />
+	<Song sLabel="איתן סער - נושם" sFile="radio/music/b-eitan2.mp3" />
+	<Song sLabel="יוסי אשר ויונתן רווח - אלינור" sFile="radio/music/yossi.mp3" />
+	<Song sLabel="טל גומבוש – Sitting On A Cloud" sFile="radio/music/gombosh1.mp3" />
+	<Song sLabel="טל גומבוש – Another Regular Day" sFile="radio/music/gombosh2.mp3" />
+	<Song sLabel="Hozat - שלך" sFile="radio/music/shelach.mp3" />
+	<Song sLabel="איתן סער ודניאל איל – On the Road" sFile="radio/music/ontheroad.mp3" />
+	<Song sLabel="Sidewalk - נמאס" sFile="radio/music/nimas.mp3" />
+	<Song sLabel="שירה ערוסי - על הבמה" sFile="radio/music/bama.mp3" />
+	<Song sLabel="Sidewalk - איפה השקט?!" sFile="radio/music/sheket.mp3" />
+	<Song sLabel="Sidewalk - לשחק באש" sFile="radio/music/fire.mp3" />
+	<Song sLabel="המשו משוהים - גזר" sFile="radio/music/gezer.mp3" />
+	<Song sLabel="Missing In Action - Subconscious " sFile="radio/music/miasubconscious.mp3" />
+	<Song sLabel="בסאם בירומי - El Maani" sFile="radio/music/El Maani.mp3" />
+	<Song sLabel="בסאם בירומי - Mnistana" sFile="radio/music/Mnistana.mp3" />
+	<Song sLabel="בסאם בירומי - El Mosafer" sFile="radio/music/el mosafer.mp3" />
+	<Song sLabel="Hozat - לא יכול להמשיך" sFile="radio/music/lehamshich.mp3" />
+	<Song sLabel="The Poppers – Hollywood" sFile="radio/music/hollywood.mp3" />
+	<Song sLabel="סהר וייסמן - My Getaway" sFile="radio/music/getaway.mp3" />
+	<Song sLabel="Ovad – Waves Of Eternity" sFile="radio/music/ovad5.mp3" />
+	<Song sLabel="בסאם בירומי -Meen Rah Yitzakar " sFile="radio/music/yitzakar.mp3" />
+	<Song sLabel="Side Roads - Feel Like This " sFile="radio/music/sideroads.mp3" />
+	<Song sLabel="תם ברג - אם את שלו" sFile="radio/music/tom.mp3" />
+	<Song sLabel="טל אבן צור - והייתי אני" sFile="radio/music/ani.mp3" />
+	<Song sLabel="אלין מלול - אשת חייל" sFile="radio/music/alin1.mp3" />
+	<Song sLabel="אלין מלול - איתמר" sFile="radio/music/alin2.mp3" />
+	<Song sLabel="תם ברג - לב שלא שואל" sFile="radio/music/lev.mp3" />
+	<Song sLabel="יותם דלאל - Can't Stay" sFile="radio/music/cant stay.mp3" />
+	<Song sLabel="יותם דלאל - מה יהיה?" sFile="radio/music/ma.mp3" />
+	<Song sLabel="אורן יעקובי - מזמן לזמן" sFile="radio/music/zman.mp3" />
+	<Song sLabel="יותם דלאל - האושר בתוכי" sFile="radio/music/yotamit.mp3" />
+	<Song sLabel="יהב מור ושון סבן - מצפות לבואו" sFile="radio/music/yahavm.mp3" />
+	<Song sLabel="Hozat -  שני עכברים" sFile="radio/music/achbarim.mp3" />
+	<Song sLabel="Hozat -  אור" sFile="radio/music/or.mp3" />
+	<Song sLabel="יותם דלאל - Best Friends" sFile="radio/music/friends.mp3" />
+	<Song sLabel="יותם דלאל - Feels Like Home" sFile="radio/music/home.mp3" />
+	<Song sLabel="טל אבן-צור - Today" sFile="radio/music/today.mp3" />
+	<Song sLabel="JePeta - חושב אחרת" sFile="radio/music/jepeta.mp3" />
+	<Song sLabel="יותם דלאל - What If" sFile="radio/music/whatif.mp3" />
+	<Song sLabel="יותם דלאל - Turn Back The Time" sFile="radio/music/turntime.mp3" />
+	<Song sLabel="Flyin' Futchinis - Homeless Bob" sFile="radio/music/homeless.mp3" />
+	<Song sLabel="אלה זהבי - נעלמים" sFile="radio/music/ela zehavi - neelamim.mp3" />
+	<Song sLabel="Quadrapop - Thinking About You" sFile="radio/music/Thinking About You - Quadrapop.mp3" />
+	<Song sLabel="איתי בכר - המכתב" sFile="radio/music/איתי בכר - המכתב.mp3" />
+	<Song sLabel="אנטילופה מררקדת - האנטילופה" sFile="radio/music/antilopa.mp3" />
+	<Song sLabel="האנטילופה מרקדת - מפקדה" sFile="radio/music/mifkada.mp3" />
+
+
+</Songs>

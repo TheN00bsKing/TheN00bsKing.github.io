@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+	<Menu>
+		<MenuItem sLabel="בית הספר לנגינה" sURL="scholl/index.html" sTarget="inner_frame" />
+		<MenuItem sLabel="גלרית תמונות" sURL="gallery/index.html" sTarget="inner_frame" />
+		<MenuItem sLabel="וידאו" sURL="video.html" sTarget="inner_frame" />
+		<MenuItem sLabel="צור קשר" sURL="contact.html" sTarget="inner_frame" />	
+		<MenuItem sLabel="אודות" sURL="about.html" sTarget="inner_frame" />	
+
+	</Menu>
+
+
+	<LeftImages>
+		<Image sFile="images/xxx/1.jpg" />
+		<Image sFile="images/xxx/2.jpg" />
+		<Image sFile="images/xxx/3.jpg" />
+		<Image sFile="images/xxx/4.jpg" />
+		<Image sFile="images/xxx/5.jpg" />
+		<Image sFile="images/xxx/6.jpg" />
+		<Image sFile="images/xxx/7.jpg" />
+		<Image sFile="images/xxx/8.jpg" />
+		<Image sFile="images/xxx/9.jpg" />
+		<Image sFile="images/xxx/10.jpg" />
+		<Image sFile="images/xxx/11.jpg" />
+		<Image sFile="images/xxx/12.jpg" />
+		<Image sFile="images/xxx/13.jpg" />
+		<Image sFile="images/xxx/14.jpg" />
+		<Image sFile="images/xxx/15.jpg" />
+		<Image sFile="images/xxx/16.jpg" />
+		<Image sFile="images/xxx/17.jpg" />
+		<Image sFile="images/xxx/18.jpg" />
+		<Image sFile="images/xxx/19.jpg" />
+		<Image sFile="images/xxx/20.jpg" />
+		<Image sFile="images/xxx/21.jpg" />
+		<Image sFile="images/xxx/22.jpg" />
+		<Image sFile="images/xxx/23.jpg" />
+		<Image sFile="images/xxx/24.jpg" />
+		<Image sFile="images/xxx/25.jpg" />
+		<Image sFile="images/xxx/26.jpg" />
+		<Image sFile="images/xxx/27.jpg" />
+		<Image sFile="images/xxx/28.jpg" />
+		<Image sFile="images/xxx/29.jpg" />
+		<Image sFile="images/xxx/30.jpg" />
+		<Image sFile="images/xxx/31.jpg" />
+		<Image sFile="images/xxx/32.jpg" />
+		<Image sFile="images/xxx/33.jpg" />
+		<Image sFile="images/xxx/34.jpg" />
+		<Image sFile="images/xxx/35.jpg" />
+		<Image sFile="images/xxx/36.jpg" />
+		<Image sFile="images/xxx/37.jpg" />
+		<Image sFile="images/xxx/38.jpg" />
+		<Image sFile="images/xxx/39.jpg" />
+		<Image sFile="images/xxx/40.jpg" />
+		<Image sFile="images/xxx/41.jpg" />
+		<Image sFile="images/xxx/42.jpg" />
+		<Image sFile="images/xxx/43.jpg" />
+		<Image sFile="images/xxx/44.jpg" />
+		<Image sFile="images/xxx/45.jpg" />
+		<Image sFile="images/xxx/46.jpg" />
+
+	</LeftImages>
+</Root>
