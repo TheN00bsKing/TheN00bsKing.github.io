@@ -14,7 +14,7 @@ window.fbAsyncInit = function() {
 }
 (document, 'script', 'facebook-jssdk'));
 
-var accessToken = "CAACEdEose0cBAFaCRrgl6UrAhv3SQqzexHoTwcOJumjpskbF3QZAoGkl1GI1DGbT63eV2I6ytKydCZBsvAeDfSHDJ7v6Gk7S3RRpmxRc7193ftU9ZC3yPU4nCt607TvJVpv7jrnlWDVryU9KpZB1N9qC3CBG5nq4IA4gkZBZC5XWhTdCwUSTTZBPIgNjRIBIXGOd1qcktSuXS20Bve5DZA8j2K7zZB64vXOgZD"
+var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
 
 function getEvents() {
     FB.api(
