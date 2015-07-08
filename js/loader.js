@@ -4,7 +4,7 @@ function hideLoadingScreen() {
     document.getElementById("loadingScreen").style.opacity = "0";
     setTimeout(function () {
         document.getElementById("loadingScreen").style.display = "none";
-    }, 4000);
+    }, 1500);
 }
 
 (function () {

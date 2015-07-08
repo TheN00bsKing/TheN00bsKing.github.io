@@ -4,9 +4,9 @@
     width: 100%;
     background-color: #bf0007;
     z-index: 1001;
-    -webkit-transition: 3s opacity 1s;
-    -o-transition: 3s opacity 1s;
-    transition: 3s opacity 1s;
+    -webkit-transition: 1s opacity 0.5s;
+    -o-transition: 1s opacity 0.5s;
+    transition: 1s opacity 0.5s;
     
 }
 
