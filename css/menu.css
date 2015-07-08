@@ -3,6 +3,7 @@
 	direction: rtl;
     position: relative;
 	color: #7b7b7b;
+    z-index: 1001;
 }
 
 #menu a {

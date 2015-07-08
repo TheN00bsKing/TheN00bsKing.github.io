@@ -39,26 +39,28 @@ function encodeThumbnail(album) {
     
     var likeButton = encodeLikeButton(album.link);
     
-    var figcaption = document.createElement("figcaption");
-    figcaption.appendChild(h1);
-    figcaption.appendChild(h2);
-    figcaption.appendChild(likeButton);
+    var details = document.createElement("div");
+    details.setAttribute("class", "details")
+    details.appendChild(h1);
+    details.appendChild(h2);
+    details.appendChild(likeButton);
     
-    var image = album.photos.data[0].images[0].source;
+    var imageURL = album.photos.data[0].images[0].source;
     var img = document.createElement('img');
-    img.setAttribute("src", "" + image);
+    img.setAttribute("src", "" + imageURL);
     
-    var figure = document.createElement("figure");
-    figure.setAttribute("onclick", "href(" + album.link + ");");
-    figure.appendChild(img);
-    figure.appendChild(figcaption);
+    var image = document.createElement("div");
+    image.setAttribute("class", "image");
+    image.setAttribute("onclick", "href(" + album.link + ");");
+    image.appendChild(img);
+    image.appendChild(details);
     
-    var li = document.createElement("li");
-    li.setAttribute("id", album.id);
-    li.appendChild(figure);
+    var gridItem = document.createElement("div");
+    gridItem.setAttribute("class", "grid-item");
+    gridItem.appendChild(image);
     
-    var grid = document.getElementById("grid");
-    grid.appendChild(li);
+    var grid = document.getElementById("grid-container");
+    grid.appendChild(gridItem);
     
     FB.XFBML.parse(document.getElementById(album.id));
 }

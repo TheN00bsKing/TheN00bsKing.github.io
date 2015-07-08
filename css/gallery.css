@@ -1,0 +1,24 @@
+body {
+    direction: rtl;
+}
+
+#grid-container {
+    position: relative;
+    margin: 0px auto;
+}
+
+.grid-item {
+    position: absolute;
+}
+
+.grid-item .image img {
+    width: 100%;
+}
+
+.grid-item .image {
+    width: 100%;
+}
+
+.grid-item h2:after {
+    content: " תמונות";
+}
