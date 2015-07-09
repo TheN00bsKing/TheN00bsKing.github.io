@@ -10,6 +10,7 @@ function getData(node, callback) {
                 callback(response);
             } else {
                 alert(response.error.message);
+				console.error(response.error);
             }
         }
     );
@@ -47,7 +48,12 @@ function encodeThumbnail(album) {
     h1.appendChild(name);
     
     var p = document.createElement("p");
-    var description = document.createTextNode(album.description);
+    var description;
+    if(album.description) {
+        description = document.createTextNode(album.description);
+    } else {
+        description = document.createTextNode("אין תיאור");
+    }
     p.appendChild(description);
     
     var h2 = document.createElement("h2");
