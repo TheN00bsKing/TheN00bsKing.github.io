@@ -27,6 +27,19 @@ function encodeLikeButton(link) {
     return div;
 }
 
+function dayToString(number) {
+    var weekday=new Array(7);
+    weekday[0]="ראשון";
+    weekday[1]="שני";
+    weekday[2]="שלישי";
+    weekday[3]="רביעי";
+    weekday[4]="חמישי";
+    weekday[5]="שישי";
+    weekday[6]="שבת";
+    
+    return weekday[number];
+}
+
 function encodeThumbnail(album) {
     
     var h1 = document.createElement("h1");
@@ -42,7 +55,9 @@ function encodeThumbnail(album) {
     h2.appendChild(count);
     
     var h3 = document.createElement("h3");
-    var date = document.createTextNode(album.created_time);
+    var dateString = new Date(album.created_time);
+    var day = dayToString(dateString.getDay());
+    var date = document.createTextNode(dateString.toLocaleDateString() + " " + day);
     h3.appendChild(date);
     
     var likeButton = encodeLikeButton(album.link);
