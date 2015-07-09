@@ -19,10 +19,10 @@ function encodeLikeButton(link) {
     var div = document.createElement("div");
     div.setAttribute("class", "fb-like");
     div.setAttribute("data-href", link);
-    div.setAttribute("data-width", "50");
+    div.setAttribute("data-width", "10");
     div.setAttribute("data-layout", "standard");
     div.setAttribute("data-action", "like");
-    div.setAttribute("data-show-faces", "true");
+    div.setAttribute("data-show-faces", "false");
     div.setAttribute("data-share", "true");
     return div;
 }
@@ -33,16 +33,26 @@ function encodeThumbnail(album) {
     var name = document.createTextNode(album.name);
     h1.appendChild(name);
     
+    var p = document.createElement("p");
+    var description = document.createTextNode(album.description);
+    p.appendChild(description);
+    
     var h2 = document.createElement("h2");
     var count = document.createTextNode(album.count);
     h2.appendChild(count);
+    
+    var h3 = document.createElement("h3");
+    var date = document.createTextNode(album.created_time);
+    h3.appendChild(date);
     
     var likeButton = encodeLikeButton(album.link);
     
     var details = document.createElement("div");
     details.setAttribute("class", "details")
     details.appendChild(h1);
+    details.appendChild(p);
     details.appendChild(h2);
+    details.appendChild(h3);
     details.appendChild(likeButton);
     
     var imageURL = album.photos.data[0].images[0].source;
@@ -66,7 +76,7 @@ function encodeThumbnail(album) {
 }
 
 function printAlbums() {
-    getData("Red.Sub.2003/albums?fields=id, name, link, count, description, photos", function (response) {
+    getData("Red.Sub.2003/albums?fields=id, name, link, count, description, photos, created_time", function (response) {
         var albums = response.data;
         for (var i = 0; i < albums.length; i++) {
             var album = albums[i];
