@@ -76,7 +76,7 @@ function encodeThumbnail(album) {
     
     var image = document.createElement("div");
     image.setAttribute("class", "image");
-    image.setAttribute("onclick", "href(" + album.link + ");");
+    image.setAttribute("onclick", "href('" + album.link + "');");
     image.appendChild(img);
     image.appendChild(details);
     
