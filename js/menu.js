@@ -23,7 +23,7 @@ menu[5] = new Tab("אודות");
 
 
 var url = window.location.pathname;
-var current = url.substring(url.lastIndexOf('/')+1);
+var currentTab = url.substring(url.lastIndexOf('/')+1);
 
 function href(link) {
     window.location.href = link;
