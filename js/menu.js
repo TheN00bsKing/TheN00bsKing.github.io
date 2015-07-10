@@ -45,7 +45,7 @@ function encodeTab(tab) {
 	} else {
 		li.setAttribute("onclick", "href('" + tab.link + "');");
 	}
-	if (tab.link == current) 
+	if (tab.link == currentTab) 
 		li.setAttribute("class", "current");
 	return li;
 }
@@ -76,7 +76,7 @@ function encodeMenu() {
 	ul.appendChild(logo);
 	
 	//home tab
-	if (current != "index.html") {
+	if (currentTab != "index.html") {
 		var home = new Tab("דף הבית", "index.html");
 		var homeTab = encodeTab(home);
 		ul.appendChild(homeTab);
