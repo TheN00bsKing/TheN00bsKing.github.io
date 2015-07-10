@@ -7,11 +7,11 @@ function Tab(name, link, sub) {
 	this.sub = sub;
 }
 
-var menu = new Array(8);
+var menu = new Array();
 menu[0] = new Tab("עדכונים", "events.html");
 menu[1] = new Tab("לוח חדר חזרות");
 
-var gallery = new Array(3);
+var gallery = new Array();
 gallery[0] = new Tab("מוזיקה");
 gallery[1] = new Tab("תמונות", "gallery.html");
 gallery[2] = new Tab("סרטונים");
@@ -20,23 +20,17 @@ menu[2] = new Tab("גלריה", "", gallery);
 menu[3] = new Tab("חנות", "shop.html");
 menu[4] = new Tab("צור קשר");
 menu[5] = new Tab("אודות");
-menu[6] = new Tab("facebook", "https://www.facebook.com/Red.Sub.2003");
 
-var test = new Array(5);
-test[0] = new Tab("test1");
-test[1] = new Tab("test2");
-test[2] = new Tab("test3");
-test[3] = new Tab("test4");
-test[4] = new Tab("test5");
-
-menu[7] = new Tab("test", "", test);
 
 var url = window.location.pathname;
 var current = url.substring(url.lastIndexOf('/')+1);
 
+function href(link) {
+    window.location.href = link;
+}
+
 function encodeTab(tab) {
 	var a = document.createElement("a");
-	a.setAttribute("href", tab.link);
 	var name = document.createTextNode(tab.name);
 	a.appendChild(name);
 	var li = document.createElement("li");
@@ -48,6 +42,8 @@ function encodeTab(tab) {
 			ul.appendChild(subTab);
 		}
 		li.appendChild(ul);
+	} else {
+		li.setAttribute("onclick", "href('" + tab.link + "');");
 	}
 	if (tab.link == current) 
 		li.setAttribute("class", "current");
@@ -70,13 +66,10 @@ function encodeMenu() {
 	logoImage.setAttribute("src", "images/red-sub-logo.png")
 	logoImage.setAttribute("width", "auto");
 	logoImage.setAttribute("height", "47px");
-
-	var logoLink = document.createElement("a");
-	logoLink.setAttribute("href", "index.html");
-	logoLink.appendChild(logoImage);
+	logoImage.setAttribute("onclick", "href('index.html');");
 
 	var logo = document.createElement("div");
-	logo.appendChild(logoLink);
+	logo.appendChild(logoImage);
 	
 	//ul element
 	var ul = document.createElement("ul");
@@ -119,8 +112,6 @@ function encodeMenu() {
 	head.appendChild(menuCSS);
 	head.appendChild(script1);
 }
-
-window.addEventListener ("load", loadMenuScript, false);
 
 function loadMenuScript(num) {
 	if (num == 0) {

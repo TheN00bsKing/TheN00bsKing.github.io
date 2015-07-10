@@ -66,7 +66,7 @@ function encodeThumbnail(album) {
     var date = document.createTextNode(dateString.toLocaleDateString() + " " + day);
     h3.appendChild(date);
     
-    var likeButton = encodeLikeButton(album.link);
+    var likeButton = encodeLikeButton("https://www.facebook.com/media/set/?set=a." + album.id);
     
     var details = document.createElement("div");
     details.setAttribute("class", "details")

@@ -45,6 +45,7 @@
     -o-transition: 0.5s height, 0.5s opacity;
     transition: 0.5s height, 0.5s opacity;
     overflow: hidden;
+	cursor: pointer;
 }
 
 #menu ul div img {
