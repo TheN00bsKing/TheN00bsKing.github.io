@@ -1,10 +1,13 @@
 function Tab(name, link, sub) {
 	this.name = name;
-	this.link = link;
+	if (link === undefined)
+		this.link = "development.html";
+	else
+		this.link = link;
 	this.sub = sub;
 }
 
-var menu = new Array(6);
+var menu = new Array(7);
 menu[0] = new Tab("עדכונים", "events.html");
 menu[1] = new Tab("לוח חדר חזרות");
 
@@ -17,6 +20,10 @@ menu[2] = new Tab("גלריה", "", gallery);
 menu[3] = new Tab("חנות", "shop.html");
 menu[4] = new Tab("צור קשר");
 menu[5] = new Tab("אודות");
+menu[6] = new Tab("facebook", "https://www.facebook.com/Red.Sub.2003");
+
+var url = window.location.pathname;
+var current = url.substring(url.lastIndexOf('/')+1);
 
 function encodeTab(tab) {
 	var a = document.createElement("a");
@@ -33,6 +40,8 @@ function encodeTab(tab) {
 		}
 		li.appendChild(ul);
 	}
+	if (tab.link == current) 
+		li.setAttribute("class", "current");
 	return li;
 }
 
@@ -59,10 +68,17 @@ function encodeMenu() {
 
 	var logo = document.createElement("div");
 	logo.appendChild(logoLink);
-
+	
 	//ul element
 	var ul = document.createElement("ul");
 	ul.appendChild(logo);
+	
+	//home tab
+	if (current != "index.html") {
+		var home = new Tab("דף הבית", "index.html");
+		var homeTab = encodeTab(home);
+		ul.appendChild(homeTab);
+	}
 
 	//tabs elements loop
 	for (var i = 0; i < menu.length; i++) {
