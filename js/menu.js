@@ -1,13 +1,13 @@
 function Tab(name, link, sub) {
 	this.name = name;
-	if (link === undefined)
+	if (link === undefined || link == "")
 		this.link = "development.html";
 	else
 		this.link = link;
 	this.sub = sub;
 }
 
-var menu = new Array(7);
+var menu = new Array(8);
 menu[0] = new Tab("עדכונים", "events.html");
 menu[1] = new Tab("לוח חדר חזרות");
 
@@ -21,6 +21,15 @@ menu[3] = new Tab("חנות", "shop.html");
 menu[4] = new Tab("צור קשר");
 menu[5] = new Tab("אודות");
 menu[6] = new Tab("facebook", "https://www.facebook.com/Red.Sub.2003");
+
+var test = new Array(5);
+test[0] = new Tab("test1");
+test[1] = new Tab("test2");
+test[2] = new Tab("test3");
+test[3] = new Tab("test4");
+test[4] = new Tab("test5");
+
+menu[7] = new Tab("test", "", test);
 
 var url = window.location.pathname;
 var current = url.substring(url.lastIndexOf('/')+1);
