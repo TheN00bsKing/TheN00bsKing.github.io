@@ -81,7 +81,10 @@ function encodeEvent(event) {
 	var h3 = document.createElement("h3");
 	var place = event.place;
 	var location = place.location;
-	var placeString = document.createTextNode(place.name + " - " + location.city + ", " + location.country);
+	if (location)
+		var placeString = document.createTextNode(place.name + " - " + location.city + ", " + location.country);
+	else
+		var placeString = document.createTextNode(place.name);
 	h3.appendChild(placeString);
 	
 	var eventDiv = document.createElement("div");
