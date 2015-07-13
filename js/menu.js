@@ -9,7 +9,7 @@ function Tab(name, link, sub) {
 
 var menu = new Array();
 menu[0] = new Tab("עדכונים", "events.html");
-menu[1] = new Tab("לוח חדר חזרות");
+menu[1] = new Tab("לוח חדר חזרות", "calendar.html");
 
 var gallery = new Array();
 gallery[0] = new Tab("מוזיקה");

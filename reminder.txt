@@ -1,0 +1,2 @@
+After uploading the web we must add the domain to the allowed referrers on google API service
+https://console.developers.google.com/project/red-sub/apiui/credential
