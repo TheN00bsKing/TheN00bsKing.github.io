@@ -8,6 +8,10 @@ $(document).ready(function() {
         events: {
             googleCalendarId: "hucufn59tl22b1fr3357r2m1u0@group.calendar.google.com"
         },
+		googleCalendarError: function(error) {
+			alert("Google Calendar Error: " + error.message);
+			console.error(error);
+		},
 		header: {
 			left:   'month agendaWeek agendaDay',
 			center: 'title',
