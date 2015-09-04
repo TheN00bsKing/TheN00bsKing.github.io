@@ -1,0 +1,28 @@
+body {
+    direction: rtl;
+}
+
+#grid-container {
+    position: relative;
+    margin: 0px auto;
+}
+
+.grid-item {
+    position: absolute;
+}
+
+.grid-item .image img {
+    width: 100%;
+}
+
+.grid-item .image {
+    width: 100%;
+}
+
+#error h1 {
+	color: #bf0007;
+	margin: 0 auto;
+	margin-top: 20vh;
+	width: 40vw;
+	font-size: 5vw;
+}

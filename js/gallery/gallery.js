@@ -82,10 +82,10 @@ function encodeThumbnail(album) {
     
     var image = document.createElement("div");
     image.setAttribute("class", "image");
-    image.setAttribute("onclick", "href('" + album.link + "');");
+    image.setAttribute("onclick", "href('album.html?id=" + album.id + "');");
     image.appendChild(img);
     image.appendChild(details);
-    
+	
     var gridItem = document.createElement("div");
     gridItem.setAttribute("class", "grid-item");
     gridItem.appendChild(image);
