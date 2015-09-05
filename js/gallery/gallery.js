@@ -76,7 +76,7 @@ function encodeThumbnail(album) {
     details.appendChild(h3);
     details.appendChild(likeButton);
     
-    var imageURL = album.photos.data[0].images[0].source;
+    var imageURL = album.photos.data[0].images[3].source;
     var img = document.createElement('img');
     img.setAttribute("src", "" + imageURL);
     

@@ -1,0 +1,13 @@
+.galleria {
+	height: 100vh;
+	width: 100vw;
+}
+
+#error h1 {
+	color: #bf0007;
+	margin: 0 auto;
+	margin-top: 20vh;
+	width: 40vw;
+	font-size: 5vw;
+	z-index: 100000;
+}

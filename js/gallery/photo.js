@@ -39,36 +39,43 @@ function getData(node, callback) {
     );
 }
 
-function encodeThumbnail(photo, link) {
+function encodePicture(photo) {
+	var img = document.createElement("img");
+	img.setAttribute("src", photo.images[0].source);
 	
-    var img = document.createElement('img');
-    img.setAttribute("src", "" + photo.images[2].source);
+	var thumbnail = document.createElement("img");
+	thumbnail.setAttribute("src", photo.images[3].source);
+	thumbnail.className = "thumbnail";
 	
-	var image = document.createElement("div");
-    image.setAttribute("class", "image");
-    image.setAttribute("onclick", "href('" + link + "');");
-    image.appendChild(img);
+	var title = document.createElement("span");
+	title.className = "title";
+	var likeIcon = document.createElement("i");
+	likeIcon.className = "fa fa-thumbs-up";
+	var likes;
+	if(photo.likes)
+		likes = photo.likes.data.length;
+	else
+		likes = 0;
+	var likeCount = document.createTextNode(" " + likes);
+	title.appendChild(likeIcon);
+	title.appendChild(likeCount);
 	
-	var gridItem = document.createElement("div");
-    gridItem.setAttribute("class", "grid-item");
-    gridItem.appendChild(image);
+	var desc = document.createElement("span");
+	desc.className = "desc";
+	var link = document.createElement("a");
+	link.setAttribute("href", photo.link);
+	var facebook = document.createElement("i");
+	facebook.className ="fa fa-facebook-official";
+	var text = document.createTextNode("View on Facebook");
+	link.appendChild(facebook);
+	link.appendChild(text);
+	desc.appendChild(link);
 	
-    var grid = document.getElementById("grid-container");
-    grid.appendChild(gridItem);
-}
-
-function encodeHeader(name, link) {
-	var header = document.getElementById("header");
-	var h1 = header.getElementsByTagName("h1");
-	h1[0].innerHTML = "";
-	var icon = document.createElement("i");
-	icon.className = "fa fa-th";
-	h1[0].appendChild(icon);
-	var name = document.createTextNode(" " +name);
-	h1[0].appendChild(name);
+	var container = document.getElementById("galleria");
+	container.appendChild(img);
+	container.appendChild(title);
+	container.appendChild(desc);
 	
-	var a = header.getElementsByTagName("a");
-	a[0].setAttribute("href", link);
 }
 
 function encodeError(text) {
@@ -76,19 +83,20 @@ function encodeError(text) {
 	var h1 = div.getElementsByTagName("h1");
 	h1[0].innerText = text;
 	h1[0].style.display = "block";
+	alert(text);
 }
 
 function initPage() {
 	if(QueryString.id){
-		getData(QueryString.id + "?fields=id, name, link, photos", function (album) {
+		getData(QueryString.id + "?fields=id, name, link, photos{likes, images, link}", function (album) {
 			if(album){
-				encodeHeader(album.name, album.link);
 				var photos = album.photos.data;
 				if(photos){
 					for(var i = 0; i < photos.length; i++){
-						var link = "photo.html?id=" + QueryString.id + "&photo=" + i;
-						encodeThumbnail(photos[i], link);
+						encodePicture(photos[i]);
+						console.log("encode photo " + (i + 1) + " / " + photos.length);
 					}
+					runGalleria();
 				}else{
 					encodeError("לא נמצאו תמונות");
 				}
@@ -99,4 +107,6 @@ function initPage() {
 	}else{
 		encodeError("לא נבחר אלבום");
 	}
+	if(QueryString.photo)
+		Galleria.configure("show", QueryString.photo);
 }
