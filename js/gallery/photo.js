@@ -44,7 +44,11 @@ function encodePicture(photo) {
 	img.setAttribute("src", photo.images[0].source);
 	
 	var thumbnail = document.createElement("img");
-	thumbnail.setAttribute("src", photo.images[3].source);
+	for(var i = 3; i > 0; i--)
+		if(photo.images[i]) {
+			thumbnail.setAttribute("src", photo.images[i].source);
+			break;
+		}
 	thumbnail.className = "thumbnail";
 	
 	var title = document.createElement("span");
