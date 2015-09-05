@@ -97,7 +97,7 @@ function encodeThumbnail(album) {
 }
 
 function printAlbums() {
-    getData("Red.Sub.2003/albums?fields=id, name, link, count, description, photos, created_time", function (response) {
+    getData("Red.Sub.2003/albums?fields=id, name, link, count, description, photos.limit(1), created_time", function (response) {
         var albums = response.data;
         for (var i = 0; i < albums.length; i++) {
             var album = albums[i];
