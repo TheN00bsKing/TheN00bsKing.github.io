@@ -108,6 +108,9 @@ function initPage() {
 				encodeError("אלבום לא נמצא");
 			}
 		});
+		var back = document.getElementById("back");
+		var link = back.getElementsByTagName("a").item(0);
+		link.setAttribute("href", "album.html?id=" + QueryString.id)
 	}else{
 		encodeError("לא נבחר אלבום");
 	}
