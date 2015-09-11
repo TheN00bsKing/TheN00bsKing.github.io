@@ -1,3 +1,4 @@
+//URL parameter getter
 var QueryString = function () {
 	// This function is anonymous, is executed immediately and 
 	// the return value is assigned to QueryString!
@@ -21,6 +22,7 @@ var QueryString = function () {
 	return query_string;
 }();
 
+//facebook config
 var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
 
 function getData(node, callback) {
@@ -39,9 +41,61 @@ function getData(node, callback) {
     );
 }
 
+//Galleria config
+Galleria.loadTheme('js/gallery/Galleria/galleria.classic.min.js');
+
+Galleria.configure({
+	imageCrop: "landscape",
+	transition: "slide",
+	swip: "enforced",
+	extend: function toggleSlideshow() {
+		var div = document.getElementById("play");
+		var icon = document.getElementsByTagName("i").item(0);
+		if(icon.className == "fa fa-pause"){
+			this.play();
+			icon.className = "fa fa-pause";
+		}else{
+			this.pause();
+			icon.className = "fa fa-play-circle";
+		}
+	}
+});
+
+Galleria.ready(function(options) {
+	this.bind('image', function(e) {
+		var newURL = window.location.href;
+		var query = window.location.search.substring(1);
+		var vars = query.split("&");
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split("=");
+			if(pair[0] == "photo"){
+				newURL = newURL.replace(vars[i], "photo=" + e.index);
+			}
+		}
+		window.history.pushState('', '', newURL);
+	});
+});
+
+function runGalleria() {
+	Galleria.run('.galleria');
+}
+
+function toggleSlideshow() {
+	var div = document.getElementById("play");
+	var icon = document.getElementsByTagName("i").item(0);
+	if(icon.className == "fa fa-play-circle"){
+		Galleria.play();
+		icon.className = "fa fa-pause";
+	}else{
+		Galleria.pause();
+		icon.className = "fa fa-play-circle";
+	}
+}
+
+//init page
 function encodePicture(photo) {
-	var img = document.createElement("img");
-	img.setAttribute("src", photo.images[0].source);
+	var img = document.createElement("a");
+	img.setAttribute("href", photo.images[0].source);
 	
 	var thumbnail = document.createElement("img");
 	for(var i = 3; i > 0; i--)
@@ -49,10 +103,9 @@ function encodePicture(photo) {
 			thumbnail.setAttribute("src", photo.images[i].source);
 			break;
 		}
-	thumbnail.className = "thumbnail";
 	
-	var title = document.createElement("span");
-	title.className = "title";
+	img.appendChild(thumbnail);
+	
 	var likeIcon = document.createElement("i");
 	likeIcon.className = "fa fa-thumbs-up";
 	var likes;
@@ -60,12 +113,10 @@ function encodePicture(photo) {
 		likes = photo.likes.data.length;
 	else
 		likes = 0;
-	var likeCount = document.createTextNode(" " + likes);
-	title.appendChild(likeIcon);
-	title.appendChild(likeCount);
+	var titleString = likeIcon.innerHTML + likes;
 	
-	var desc = document.createElement("span");
-	desc.className = "desc";
+	img.setAttribute("data-title", titleString);
+	
 	var link = document.createElement("a");
 	link.setAttribute("href", photo.link);
 	var facebook = document.createElement("i");
@@ -73,12 +124,11 @@ function encodePicture(photo) {
 	var text = document.createTextNode("View on Facebook");
 	link.appendChild(facebook);
 	link.appendChild(text);
-	desc.appendChild(link);
+	
+	img.setAttribute("data-description", link.innerHTML);
 	
 	var container = document.getElementById("galleria");
 	container.appendChild(img);
-	container.appendChild(title);
-	container.appendChild(desc);
 	
 }
 
@@ -87,7 +137,7 @@ function encodeError(text) {
 	var h1 = div.getElementsByTagName("h1");
 	h1[0].innerText = text;
 	h1[0].style.display = "block";
-	alert(text);
+	//alert(text);
 }
 
 function initPage() {

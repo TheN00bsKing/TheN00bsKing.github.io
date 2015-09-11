@@ -29,80 +29,22 @@
        }(document, 'script', 'facebook-jssdk'));
     </script>
     <link rel="stylesheet" type="text/css" href="css/photo.css" />
-	<script src="js/gallery/photo.js" type="text/javascript"></script>
-	
 	<script type="text/javascript" src="js/gallery/Galleria/galleria-1.4.2.min.js"></script>
-	<script>
-	Galleria.loadTheme('js/gallery/Galleria/galleria.classic.min.js');
-	Galleria.configure({
-		imageCrop: "landscape",
-		transition: "slide",
-		swip: "enforced",
-		thumbQuality: false,
-		dataConfig: function(img) {
-			return {
-				thumb: $(img).next(".thumbnail").attr("scr"),
-				title: $(img).next('.title').html(),
-				description: $(img).next('.desc').html()
-			};
-		},
-		showInfo: true,
-		extend: function toggleSlideshow() {
-			var div = document.getElementById("play");
-			var icon = document.getElementsByTagName("i").item(0);
-			if(icon.className == "fa fa-pause"){
-				this.play();
-				icon.className = "fa fa-pause";
-			}else{
-				this.pause();
-				icon.className = "fa fa-play-circle";
-			}
-		}
-	});
-	Galleria.ready(function(options) {
-		this.bind('image', function(e) {
-			var newURL = window.location.href;
-			var query = window.location.search.substring(1);
-			var vars = query.split("&");
-			for (var i = 0; i < vars.length; i++) {
-				var pair = vars[i].split("=");
-				if(pair[0] == "photo"){
-					newURL = newURL.replace(vars[i], "photo=" + e.index);
-				}
-			}
-			window.history.pushState('', '', newURL);
-		});
-	});
-		
-	function runGalleria() {
-		Galleria.run('.galleria');
-	}
-	function toggleSlideshow() {
-		var div = document.getElementById("play");
-		var icon = document.getElementsByTagName("i").item(0);
-		if(icon.className == "fa fa-play-circle"){
-			Galleria.play();
-			icon.className = "fa fa-pause";
-		}else{
-			Galleria.pause();
-			icon.className = "fa fa-play-circle";
-		}
-	}
-</script>
+	<script src="js/gallery/photo.js" type="text/javascript"></script>
 	
 </head>
 <body>
 	<script src="js/loader.js" type="text/javascript"></script>
     <div id="fb-root"></div>
     
+	<div id="error">
+		<h1></h1>
+	</div>
+	
 	<div id="back"><a href="gallery.html"><i class="fa fa-arrow-circle-left"></i></a></div>
 	<div id="play" onclick="toggleSlideshow();"><i class="fa fa-play-circle"></i></div>
 	
 	<div class="galleria" id="galleria">
-	</div>
-	
-	<div id="error">
-		<h1></h1>
 	</div>
 	
 </body>

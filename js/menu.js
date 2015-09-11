@@ -1,3 +1,4 @@
+//menu data config
 function Tab(name, link, sub) {
 	this.name = name;
 	if (link === undefined || link == "")
@@ -8,20 +9,19 @@ function Tab(name, link, sub) {
 }
 
 var menu = new Array();
-menu[0] = new Tab("עדכונים", "events.html");
-menu[1] = new Tab("לוח חדר חזרות", "calendar.html");
+menu[0] = new Tab("לוח חדר חזרות", "calendar.html");
 
 var gallery = new Array();
-gallery[0] = new Tab("מוזיקה");
-gallery[1] = new Tab("תמונות", "gallery.html");
-gallery[2] = new Tab("סרטונים");
+gallery[0] = new Tab("תמונות", "gallery.html");
+gallery[1] = new Tab("סרטונים");
 
-menu[2] = new Tab("גלריה", "", gallery);
-menu[3] = new Tab("חנות", "shop.html");
-menu[4] = new Tab("צור קשר");
-menu[5] = new Tab("אודות");
+menu[1] = new Tab("גלריה", "", gallery);
+menu[2] = new Tab("חנות", "shop.html");
+menu[3] = new Tab("צור קשר");
+menu[4] = new Tab("אודות");
 
 
+//menu print code
 var url = window.location.pathname;
 var currentTab = url.substring(url.lastIndexOf('/')+1);
 

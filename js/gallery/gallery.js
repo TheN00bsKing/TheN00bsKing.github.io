@@ -1,3 +1,4 @@
+//facebook config
 var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
 
 function getData(node, callback) {
@@ -16,6 +17,10 @@ function getData(node, callback) {
     );
 }
 
+//black list
+var blackList = ["10151854550403063", "122407538062"];
+
+//init page
 function encodeLikeButton(link) {
     var div = document.createElement("div");
     div.setAttribute("class", "fb-like");
@@ -101,7 +106,8 @@ function printAlbums() {
         var albums = response.data;
         for (var i = 0; i < albums.length; i++) {
             var album = albums[i];
-            encodeThumbnail(album);
+			if(blackList.indexOf(album.id) <= -1)
+            	encodeThumbnail(album);
         }
     });
     
