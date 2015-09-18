@@ -109,6 +109,29 @@ function printEvents() {
             encodeEvent(event);
         }
     });
+	var events = function () {
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data/Events.xml", false);
+		xmlhttp.send();
+		if (xmlhttp.status == 404) {
+			encodeError("מידע לא נמצא")
+		}
+		xmlDoc = xmlhttp.responseXML;
+		
+		var docEvents = xmlDoc.childNodes[0];
+		var docEventList = docEvents.getElementsByTagName("Event");
+		var eventsArray = new Array(docEventList.length);
+		for (var i = 0; i < eventsArray.length; i++) {
+			eventsArray[i] = docEventList[i].textContent;
+		}
+		return eventsArray;
+	}();
+	for (var i = 0; i < events.length; i++) {
+		getData("870958602992569?fields=id,name,cover,place,start_time", function (response) {
+			encodeEvent(response);
+		});
+	}
 }
 
 function initFacebook() {
