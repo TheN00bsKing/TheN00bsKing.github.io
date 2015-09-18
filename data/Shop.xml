@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shop>
+	<Info text="שעות פעילות">א-ה 16:00-20:00</Info>
+	<Info text="טלפון">05*-***-***</Info>
+	<Info text="מידע">some information</Info>
+	<Item id="1">
+		<Name>סט מיתרים לחשמלית 009</Name>
+		<Desc>סט מיתרים לחשמלית 009 DORAZIO Nickel</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/D%E2%80%99ORAZIO%20SET-31_%D7%9E%D7%99%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%92%D7%99%D7%98%D7%A8%D7%94%20%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA.jpg</Image>
+	</Item>
+	<Item id="2">
+		<Name>סט מיתרים לחשמלית 010</Name>
+		<Desc>סט מיתרים לחשמלית 010 DORAZIO Nickel</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/D%E2%80%99ORAZIO%20SET-31_%D7%9E%D7%99%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%92%D7%99%D7%98%D7%A8%D7%94%20%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA.jpg</Image>
+	</Item>
+	<Item id="3">
+		<Name>סט מיתרים לאקוסטית 010</Name>
+		<Desc>סט מיתרים לאקוסטית 010 DORAZIO</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/D%E2%80%99ORAZIO%20SET-10_%D7%9E%D7%99%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%92%D7%99%D7%98%D7%A8%D7%94%20%D7%90%D7%A7%D7%95%D7%A1%D7%98%D7%99%D7%AA.jpg</Image>
+	</Item>
+	<Item id="4">
+		<Name>סט מיתרים לקלאסית</Name>
+		<Desc>סט מיתרים לקלאסית מפתח בינוני DORAZIO NT</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/D%E2%80%99ORAZIO%20TN_642_%D7%9E%D7%99%D7%AA%D7%A8%D7%99%D7%9D%20%D7%9C%D7%92%D7%99%D7%98%D7%A8%D7%94%20%D7%90%D7%A7%D7%95%D7%A1%D7%98%D7%99%D7%AA.jpg</Image>
+	</Item>
+	<Item id="5">
+		<Name>גשר לגיטרה אקוסטית</Name>
+		<Desc>גשר לגיטרה אקוסטית Budagov CAP-A</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/Budagov-CAP-A_%D7%92%D7%A9%D7%A8%20%D7%9C%D7%92%D7%99%D7%98%D7%A8%D7%94%20%D7%97%D7%A9%D7%9E%D7%9C%D7%99%D7%AA%20%D7%95%D7%90%D7%A7%D7%95%D7%A1%D7%98%D7%99%D7%AA.jpg</Image>
+	</Item>
+	<Item id="6">
+		<Name>כבל גיטרה 6 מטר</Name>
+		<Desc>כבל גיטרה 6 מטר STAGG</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/%D7%9B%D7%91%D7%9C-%D7%92%D7%99%D7%98%D7%A8%D7%94_SGC6DL.jpg</Image>
+	</Item>
+	<Item id="7">
+		<Name>מקלות תופים 5A X</Name>
+		<Desc>מקלות תופים REGAL TIP - Road Series 5A X</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/hickory_5ax.jpg</Image>
+	</Item>
+	<Item id="8">
+		<Name>מקלות תופים 5A</Name>
+		<Desc>מקלות תופים REGAL TIP - 5A</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/standard_5a.jpg</Image>
+	</Item>
+	<Item id="9">
+		<Name>מברשות לתופים</Name>
+		<Desc>מברשות לתופים REGAL TIP - Classic</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/583_1.gif</Image>
+	</Item>
+	<Item id="10">
+		<Name>סט מיתרים לבס</Name>
+		<Desc>סט מיתרים לבס 40-95 VINCI</Desc>
+		<Price>0</Price>
+		<Image>http://www.budagov.co.il/store_items_images/716Light.jpg</Image>
+	</Item>
+	<Item id="11">
+		<Name>מיתר בודד לחשמלית/אקוסטית 009</Name>
+		<Desc>מיתר בודד לחשמלית/אקוסטית BUDAGOV 009</Desc>
+		<Price>0</Price>
+	</Item>
+	<Item id="12">
+		<Name>מיתר בודד לחשמלית/אקוסטית 010</Name>
+		<Desc>מיתר בודד לחשמלית/אקוסטית BUDAGOV 010</Desc>
+		<Price>0</Price>
+	</Item>
+</Shop>

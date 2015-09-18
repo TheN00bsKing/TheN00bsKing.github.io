@@ -30,6 +30,28 @@
     content: ": "
 }
 
+#grid-container {
+    position: relative;
+    margin: 0px auto;
+	direction: rtl;
+}
+
+.grid-item {
+    position: absolute;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.grid-item {
+    width: 100%;
+}
+
+.grid-item h2:before {
+    content: "מחיר: ";
+}
+
 @media screen and (max-width: 765px) {
     #info iframe {
         width: 95%;
