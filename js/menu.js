@@ -56,7 +56,7 @@ function encodeTab(tab) {
 	} else {
 		li.setAttribute("onclick", "href('" + tab.link + "');");
 	}
-	if (tab.link == currentTab) {
+	if (currentTab && tab.link == currentTab) {
 		li.setAttribute("class", "current");
 		var head = document.head.children;
 		for (var i = 0; i < head.length; i++) {
@@ -93,7 +93,7 @@ function encodeMenu() {
 	ul.appendChild(logo);
 	
 	//home tab
-	if (currentTab != "index.html") {
+	if (currentTab && currentTab != "index.html") {
 		var home = {
 			name: "דף הבית",
 			link: "index.html"
