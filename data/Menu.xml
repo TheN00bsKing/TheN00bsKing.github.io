@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Menu>
+	<Tab name="לוח חדר חזרות" link="calendar.html"></Tab>
+	<Tab name="גלריה">
+		<Tab name="תמונות" link="gallery.html"></Tab>
+		<Tab name="סרטונים" link=""></Tab>
+	</Tab>
+	<Tab name="חנות" link="shop.html"></Tab>
+	<Tab name="צור קשר" link=""></Tab>
+	<Tab name="אודות" link=""></Tab>
+</Menu>

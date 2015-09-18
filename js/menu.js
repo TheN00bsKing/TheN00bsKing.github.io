@@ -1,25 +1,37 @@
-//menu data config
-function Tab(name, link, sub) {
-	this.name = name;
-	if (link === undefined || link == "")
-		this.link = "development.html";
-	else
-		this.link = link;
-	this.sub = sub;
-}
-
-var menu = new Array();
-menu[0] = new Tab("לוח חדר חזרות", "calendar.html");
-
-var gallery = new Array();
-gallery[0] = new Tab("תמונות", "gallery.html");
-gallery[1] = new Tab("סרטונים");
-
-menu[1] = new Tab("גלריה", "", gallery);
-menu[2] = new Tab("חנות", "shop.html");
-menu[3] = new Tab("צור קשר");
-menu[4] = new Tab("אודות");
-
+var menu = function () {
+	function getTab(docTab) {
+		var tabObject = {};
+		var attrs = docTab.attributes;
+		for (var i = 0; i < attrs.length; i++) {
+			tabObject[attrs[i].localName] = attrs[i].textContent;
+		}
+		if (docTab.children.length > 0) {
+			var tabArray = new Array(docTab.children.length);
+			for (var j = 0; j < docTab.children.length; j++) {
+				tabArray[j] = getTab(docTab.children[j]);
+			}
+			tabObject["subTabs"] = tabArray;
+		}
+		return tabObject;
+	}
+	
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data/Menu.xml", false);
+	xmlhttp.send();
+	if (xmlhttp.status == 404) {
+		console.error("מידע לא נמצא");
+	}
+	xmlDoc = xmlhttp.responseXML;
+	
+	var docMenu = xmlDoc.childNodes[0];
+	var docTabList = docMenu.children;
+	var tabArray = new Array(docTabList.length);
+	for (var i = 0; i < tabArray.length; i++) {
+		tabArray[i] = getTab(docTabList[i]);
+	}
+	return tabArray;
+}();
 
 //menu print code
 var url = window.location.pathname;
@@ -31,14 +43,13 @@ function href(link) {
 
 function encodeTab(tab) {
 	var a = document.createElement("a");
-	var name = document.createTextNode(tab.name);
-	a.appendChild(name);
+	a.innerText = tab.name;
 	var li = document.createElement("li");
 	li.appendChild(a);
-	if (tab.sub) {
+	if (tab.subTabs) {
 		var ul = document.createElement("ul");
-		for (var i = 0; i < tab.sub.length; i++) {
-			var subTab = encodeTab(tab.sub[i]);
+		for (var i = 0; i < tab.subTabs.length; i++) {
+			var subTab = encodeTab(tab.subTabs[i]);
 			ul.appendChild(subTab);
 		}
 		li.appendChild(ul);
@@ -77,7 +88,10 @@ function encodeMenu() {
 	
 	//home tab
 	if (currentTab != "index.html") {
-		var home = new Tab("דף הבית", "index.html");
+		var home = {
+			name: "דף הבית",
+			link: "index.html"
+		};
 		var homeTab = encodeTab(home);
 		ul.appendChild(homeTab);
 	}
@@ -91,10 +105,9 @@ function encodeMenu() {
 	//handle element
 	var handleIcon = document.createElement("i");
 	handleIcon.setAttribute("class", "fa fa-bars");
-	var handleName = document.createTextNode("תפריט");
 	var handle = document.createElement("div");
 	handle.setAttribute("id", "handle");
-	handle.appendChild(handleName);
+	handle.innerText = "תפריט";
 	handle.appendChild(handleIcon);
 	
 	//nav element
