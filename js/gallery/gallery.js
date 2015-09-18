@@ -18,7 +18,24 @@ function getData(node, callback) {
 }
 
 //black list
-var blackList = ["10151854550403063", "122407538062"];
+var blackList = function () {
+	var xmlhttp, xmlDoc;
+	xmlhttp = new XMLHttpRequest();
+	xmlhttp.open("GET", "data/Gallery.xml", false);
+	xmlhttp.send();
+	if (xmlhttp.status == 404) {
+		encodeError("מידע לא נמצא")
+	}
+	xmlDoc = xmlhttp.responseXML;
+	
+	var docGallery = xmlDoc.childNodes[0];
+	var docBlackList = docGallery.getElementsByTagName("blackList")[0];
+	var blackListArray = new Array(docBlackList.children.length);
+	for (var i = 0; i < blackListArray.length; i++) {
+		blackListArray[i] = docBlackList.children[i].textContent;
+	}
+	return blackListArray;
+}();
 
 //init page
 function encodeLikeButton(link) {
@@ -81,7 +98,7 @@ function encodeThumbnail(album) {
     details.appendChild(h3);
     details.appendChild(likeButton);
     
-    var imageURL = album.photos.data[0].images[3].source;
+    var imageURL = album.photos.data[0].images[album.photos.data[0].images.length - 1].source;
     var img = document.createElement('img');
     img.setAttribute("src", "" + imageURL);
     
