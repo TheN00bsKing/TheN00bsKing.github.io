@@ -31,8 +31,12 @@ function encodeLoadingScreen() {
 
 function hideLoadingScreen() {
     document.getElementById("loadingScreen").style.opacity = "0";
+	if(document.getElementById("loadingText"))
+		document.getElementById("loadingText").style.opacity = "0";
     setTimeout(function () {
         document.getElementById("loadingScreen").style.display = "none";
+		if(document.getElementById("loadingText"))
+        	document.getElementById("loadingText").style.display = "none";
     }, 1500);
 }
 

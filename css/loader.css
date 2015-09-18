@@ -23,3 +23,17 @@
     width: 10px;
     margin: 10px;
 }
+
+#loadingText {
+	z-index: 1002;
+	position: fixed;
+	color: #ff0337;
+	bottom: 0px;
+	left: 0px;
+	padding-left: 5vw;
+	padding-bottom: 20px;
+	font-size: 1vw;
+	-webkit-transition: 1s opacity 0.5s;
+    -o-transition: 1s opacity 0.5s;
+    transition: 1s opacity 0.5s;
+}
