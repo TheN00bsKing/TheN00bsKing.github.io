@@ -82,6 +82,11 @@ function initPage() {
 	if(QueryString.id){
 		getData(QueryString.id + "?fields=id, name, link, photos", function (album) {
 			if(album){
+				var head = document.head.children;
+				for (var i = 0; i < head.length; i++) {
+					if (head[i].localName == "title")
+						head[i].textContent += " - " + album.name;
+				}
 				encodeHeader(album.name, album.link);
 				var photos = album.photos.data;
 				if(photos){

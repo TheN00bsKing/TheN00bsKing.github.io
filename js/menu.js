@@ -56,8 +56,14 @@ function encodeTab(tab) {
 	} else {
 		li.setAttribute("onclick", "href('" + tab.link + "');");
 	}
-	if (tab.link == currentTab) 
+	if (tab.link == currentTab) {
 		li.setAttribute("class", "current");
+		var head = document.head.children;
+		for (var i = 0; i < head.length; i++) {
+			if (head[i].localName == "title")
+				head[i].textContent += " - " + tab.name;
+		}
+	}
 	return li;
 }
 

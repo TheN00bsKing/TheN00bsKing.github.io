@@ -144,6 +144,11 @@ function initPage() {
 	if(QueryString.id){
 		getData(QueryString.id + "?fields=id, name, link, photos{likes, images, link}", function (album) {
 			if(album){
+				var head = document.head.children;
+				for (var i = 0; i < head.length; i++) {
+					if (head[i].localName == "title")
+						head[i].textContent += " - " + album.name;
+				}
 				var photos = album.photos.data;
 				if(photos){
 					for(var i = 0; i < photos.length; i++){
