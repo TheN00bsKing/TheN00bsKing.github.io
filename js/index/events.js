@@ -1,21 +1,3 @@
-var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
-
-function getData(node, callback) {
-    FB.api(
-        "/" + node, 
-        "GET",
-        {access_token: accessToken},
-        function (response) {
-            if (response && !response.error) {
-                callback(response);
-            } else {
-                alert(response.error.message);
-				console.error(response.error);
-            }
-        }
-    );
-}
-
 function dayToString(number) {
     var weekday=new Array(7);
     weekday[0]="ראשון";
@@ -80,27 +62,20 @@ function initEvents() {
         }
     });
 	
-	var events = function () {
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data/Events.xml", false);
-		xmlhttp.send();
-		if (xmlhttp.status == 404) {
-			encodeError("מידע לא נמצא")
+	getXMLData("data/Events.xml", function(response) {
+		var events = function () {
+			var docEvents = response.childNodes[0];
+			var docEventList = docEvents.getElementsByTagName("Event");
+			var eventsArray = new Array(docEventList.length);
+			for (var i = 0; i < eventsArray.length; i++) {
+				eventsArray[i] = docEventList[i].textContent;
+			}
+			return eventsArray;
+		}();
+		for (var i = 0; i < events.length; i++) {
+			getData(events[i] + "?fields=id,name,cover,place,start_time", function (response) {
+				encodeEvent(response);
+			});
 		}
-		xmlDoc = xmlhttp.responseXML;
-		
-		var docEvents = xmlDoc.childNodes[0];
-		var docEventList = docEvents.getElementsByTagName("Event");
-		var eventsArray = new Array(docEventList.length);
-		for (var i = 0; i < eventsArray.length; i++) {
-			eventsArray[i] = docEventList[i].textContent;
-		}
-		return eventsArray;
-	}();
-	for (var i = 0; i < events.length; i++) {
-		getData(events[i] + "?fields=id,name,cover,place,start_time", function (response) {
-			encodeEvent(response);
-		});
-	}
+	}, false);
 }

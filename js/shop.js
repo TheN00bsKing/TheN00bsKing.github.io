@@ -1,54 +1,48 @@
-var xmlhttp, xmlDoc;
-xmlhttp = new XMLHttpRequest();
-xmlhttp.open("GET", "data/Shop.xml", false);
-xmlhttp.send();
-if (xmlhttp.status == 404) {
-	encodeError("מידע לא נמצא")
-}
-xmlDoc = xmlhttp.responseXML;
+var shop;
+getXMLData("data/Shop.xml", function (response) {
+	shop = function () {
+		var shopObject = {};
+		var docShop = response.childNodes[0];
+		var docInfo = docShop.getElementsByTagName("Info");
+		var info = new Array(docInfo.length);
+		for(var i = 0; i < info.length; i++) {
+			info[i] = function (){
+				var infoObject = {};
+				var attrs = docInfo[i].attributes;
+				for (var j = 0; j < attrs.length; j++) {
+					infoObject[attrs[j].localName] = attrs[j].textContent;
+				}
+				var childs = docInfo[i].children;
+				for(var j = 0; j < childs.length; j++) {
+					infoObject[childs[j].tagName] = childs[j].textContent;
+				}
+				infoObject["content"] = docInfo[i].textContent;
+				return infoObject;
+			}();
+		}
+		shopObject["info"] = info;
 
-var shop = function () {
-	var shopObject = {};
-	var docShop = xmlDoc.childNodes[0];
-	var docInfo = docShop.getElementsByTagName("Info");
-	var info = new Array(docInfo.length);
-	for(var i = 0; i < info.length; i++) {
-		info[i] = function (){
-			var infoObject = {};
-			var attrs = docInfo[i].attributes;
-			for (var j = 0; j < attrs.length; j++) {
-				infoObject[attrs[j].localName] = attrs[j].textContent;
-			}
-			var childs = docInfo[i].children;
-			for(var j = 0; j < childs.length; j++) {
-				infoObject[childs[j].tagName] = childs[j].textContent;
-			}
-			infoObject["content"] = docInfo[i].textContent;
-			return infoObject;
-		}();
-	}
-	shopObject["info"] = info;
-	
-	var docItems = docShop.getElementsByTagName("Item");
-	var items = new Array(docItems.length);
-	for (var i = 0; i < items.length; i++) {
-		items[i] = function () {
-			var itemObject = {};
-			var attrs = docItems[i].attributes;
-			for (var j = 0; j < attrs.length; j++) {
-				itemObject[attrs[j].localName] = attrs[j].textContent;
-			}
-			var childs = docItems[i].children;
-			for(var j = 0; j < childs.length; j++) {
-				itemObject[childs[j].tagName] = childs[j].textContent;
-			}
-			return itemObject;
-		}();
-	}
-	shopObject["items"] = items;
-	return shopObject;
-}();
-console.log(shop);
+		var docItems = docShop.getElementsByTagName("Item");
+		var items = new Array(docItems.length);
+		for (var i = 0; i < items.length; i++) {
+			items[i] = function () {
+				var itemObject = {};
+				var attrs = docItems[i].attributes;
+				for (var j = 0; j < attrs.length; j++) {
+					itemObject[attrs[j].localName] = attrs[j].textContent;
+				}
+				var childs = docItems[i].children;
+				for(var j = 0; j < childs.length; j++) {
+					itemObject[childs[j].tagName] = childs[j].textContent;
+				}
+				return itemObject;
+			}();
+		}
+		shopObject["items"] = items;
+		return shopObject;
+	}();
+	initPage();
+}, false);
 
 function encodeError(text) {
 	var div = document.getElementById("error");
@@ -102,6 +96,7 @@ function encodeInfo(name, text) {
 }
 
 function initPage() {
+	console.log(shop);
 	for (var i = 0; i < shop.info.length; i++) {
 		encodeInfo(shop.info[i].text, shop.info[i].content);
 	}

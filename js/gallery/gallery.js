@@ -1,22 +1,26 @@
 //black list
-var blackList = function () {
-	var xmlhttp, xmlDoc;
-	xmlhttp = new XMLHttpRequest();
-	xmlhttp.open("GET", "data/Gallery.xml", false);
-	xmlhttp.send();
-	if (xmlhttp.status == 404) {
-		encodeError("מידע לא נמצא")
-	}
-	xmlDoc = xmlhttp.responseXML;
-	
-	var docGallery = xmlDoc.childNodes[0];
-	var docBlackList = docGallery.getElementsByTagName("blackList")[0];
-	var blackListArray = new Array(docBlackList.children.length);
-	for (var i = 0; i < blackListArray.length; i++) {
-		blackListArray[i] = docBlackList.children[i].textContent;
-	}
-	return blackListArray;
-}();
+var blackList;
+getXMLData("data/Gallery.xml", function(response) {
+	blackList= function () {
+		var xmlhttp, xmlDoc;
+		xmlhttp = new XMLHttpRequest();
+		xmlhttp.open("GET", "data/Gallery.xml", false);
+		xmlhttp.send();
+		if (xmlhttp.status == 404) {
+			encodeError("מידע לא נמצא")
+		}
+		xmlDoc = xmlhttp.responseXML;
+
+		var docGallery = xmlDoc.childNodes[0];
+		var docBlackList = docGallery.getElementsByTagName("blackList")[0];
+		var blackListArray = new Array(docBlackList.children.length);
+		for (var i = 0; i < blackListArray.length; i++) {
+			blackListArray[i] = docBlackList.children[i].textContent;
+		}
+		return blackListArray;
+	}();
+	initPage();
+}, false);
 
 //init page
 function encodeLikeButton(link) {
@@ -99,7 +103,7 @@ function encodeThumbnail(album) {
     FB.XFBML.parse(document.getElementById(album.id));
 }
 
-function printAlbums() {
+function initPage() {
     getData("Red.Sub.2003/albums?fields=id, name, link, count, description, photos.limit(1), created_time", function (response) {
         var albums = response.data;
         for (var i = 0; i < albums.length; i++) {
