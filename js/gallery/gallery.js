@@ -1,22 +1,3 @@
-//facebook config
-var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
-
-function getData(node, callback) {
-    FB.api(
-        "/" + node, 
-        "GET",
-        {access_token: accessToken},
-        function (response) {
-            if (response && !response.error) {
-                callback(response);
-            } else {
-                alert(response.error.message);
-				console.error(response.error);
-            }
-        }
-    );
-}
-
 //black list
 var blackList = function () {
 	var xmlhttp, xmlDoc;

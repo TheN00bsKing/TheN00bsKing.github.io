@@ -1,33 +1,3 @@
-function initEvents() {
-	var script = document.createElement("script");
-	script.setAttribute("src", "http://connect.facebook.net/en_US/all.js");
-	script.setAttribute("onload", "initFacebook();")
-
-	var eventCSS = document.createElement("link");
-	eventCSS.setAttribute("rel", "stylesheet");
-	eventCSS.setAttribute("href", "css/events.css");
-
-	var head = document.head;
-	head.appendChild(script);
-	head.appendChild(eventCSS);
-	
-	var titleH1 = document.createElement("h1");
-	titleH1.innerHTML = "לוח אירועים קרובים";
-	
-	var title = document.createElement("div");
-	title.setAttribute("class", "event");
-	title.setAttribute("id", "eventsTitle");
-	title.appendChild(titleH1);
-
-	var grid = document.createElement("div");
-	grid.setAttribute("id", "events");
-	grid.appendChild(title);
-
-	var body = document.body;
-	body.appendChild(grid);
-}
-initEvents();
-
 var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
 
 function getData(node, callback) {
@@ -101,7 +71,7 @@ function encodeEvent(event) {
 	grid.appendChild(eventDiv);
 }
 
-function printEvents() {
+function initEvents() {
 	getData("Red.Sub.2003/events?fields=id,name,cover,place,start_time", function (response) {
         var events = response.data;
         for (var i = 0; i < events.length; i++) {
@@ -109,6 +79,7 @@ function printEvents() {
             encodeEvent(event);
         }
     });
+	
 	var events = function () {
 		var xmlhttp, xmlDoc;
 		xmlhttp = new XMLHttpRequest();
@@ -128,28 +99,8 @@ function printEvents() {
 		return eventsArray;
 	}();
 	for (var i = 0; i < events.length; i++) {
-		getData("870958602992569?fields=id,name,cover,place,start_time", function (response) {
+		getData(events[i] + "?fields=id,name,cover,place,start_time", function (response) {
 			encodeEvent(response);
 		});
 	}
-}
-
-function initFacebook() {
-	window.fbAsyncInit = function() {
-		FB.init({
-			appId      : '640939622674569',
-			xfbml      : true,
-			version    : 'v2.3'
-		});
-	};
-
-	(function(d, s, id){
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) {return;}
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	
-	printEvents();
 }
