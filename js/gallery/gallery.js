@@ -2,16 +2,7 @@
 var blackList;
 getXMLData("data/Gallery.xml", function(response) {
 	blackList= function () {
-		var xmlhttp, xmlDoc;
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.open("GET", "data/Gallery.xml", false);
-		xmlhttp.send();
-		if (xmlhttp.status == 404) {
-			encodeError("מידע לא נמצא")
-		}
-		xmlDoc = xmlhttp.responseXML;
-
-		var docGallery = xmlDoc.childNodes[0];
+		var docGallery = response.childNodes[0];
 		var docBlackList = docGallery.getElementsByTagName("blackList")[0];
 		var blackListArray = new Array(docBlackList.children.length);
 		for (var i = 0; i < blackListArray.length; i++) {
