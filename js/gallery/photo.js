@@ -91,23 +91,23 @@ function encodeError(text) {
 function initPage() {
 	if(urlParameters.id){
 		getData(urlParameters.id + "?fields=id, name, link, photos{likes, images, link}", function (album) {
-			if(album){
+			if (album) {
 				var head = document.head.children;
 				for (var i = 0; i < head.length; i++) {
 					if (head[i].localName == "title")
 						head[i].textContent += " - " + album.name;
 				}
 				var photos = album.photos.data;
-				if(photos){
-					for(var i = 0; i < photos.length; i++){
+				if (photos) {
+					for (var i = 0; i < photos.length; i++) {
 						encodePicture(photos[i]);
 						console.log("encode photo " + (i + 1) + " / " + photos.length);
 					}
 					runGalleria();
-				}else{
+				} else {
 					encodeError("לא נמצאו תמונות");
 				}
-			}else{
+			} else {
 				encodeError("אלבום לא נמצא");
 			}
 		});

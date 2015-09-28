@@ -13,10 +13,11 @@ window.fbAsyncInit = function() {
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));
 
-//facebook config
-var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
 
 function getData(node, callback) {
+	//facebook config
+	var accessToken = "640939622674569|0RxuhIyPrp9_DQyo-UQ9lI9R4YY";
+
     FB.api(
         "/" + node, 
         "GET",
@@ -25,7 +26,6 @@ function getData(node, callback) {
             if (response && !response.error) {
                 callback(response);
             } else {
-                alert(response.error.message);
 				console.error(response.error);
             }
         }
