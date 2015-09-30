@@ -15,14 +15,22 @@ getXMLData("data/Gallery.xml", function(response) {
 
 //init page
 function encodeLikeButton(link) {
-    var div = document.createElement("div");
-    div.setAttribute("class", "fb-like");
-    div.setAttribute("data-href", link);
-    div.setAttribute("data-width", "10");
-    div.setAttribute("data-layout", "standard");
-    div.setAttribute("data-action", "like");
-    div.setAttribute("data-show-faces", "false");
-    div.setAttribute("data-share", "true");
+	var div = document.createElement("div")
+	div.setAttribute("class", "fbPlugin");
+
+	//like button
+    var likeBT = document.createElement("fb:like");
+    likeBT.setAttribute("href", link);
+    //likeBT.setAttribute("colorscheme", "dark"); for dark background
+
+	//share button
+    var shareBT = document.createElement("fb:share-button");
+    shareBT.setAttribute("href", link);
+    shareBT.setAttribute("type", "button_count");
+
+	div.appendChild(likeBT);
+	div.appendChild(shareBT);
+
     return div;
 }
 

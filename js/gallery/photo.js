@@ -46,24 +46,13 @@ function encodePicture(photo) {
 	img.setAttribute("href", photo.images[0].source);
 	
 	var thumbnail = document.createElement("img");
-	for(var i = 3; i > 0; i--)
-		if(photo.images[i]) {
-			thumbnail.setAttribute("src", photo.images[i].source);
-			break;
-		}
-	
+	thumbnail.setAttribute("src", photo.images[photo.images.length - 1].source);
 	img.appendChild(thumbnail);
 	
-	var likeIcon = document.createElement("i");
-	likeIcon.className = "fa fa-thumbs-up";
-	var likes;
-	if(photo.likes)
-		likes = photo.likes.data.length;
-	else
-		likes = 0;
-	var titleString = likeIcon.innerHTML + likes;
-	
-	img.setAttribute("data-title", titleString);
+	var like = document.createElement("fb:like");
+	alert(photo.link);
+	like.setAttribute("href", photo.link);
+	img.setAttribute("data-layer", like.innerHTML);
 	
 	var link = document.createElement("a");
 	link.setAttribute("href", photo.link);
@@ -77,7 +66,6 @@ function encodePicture(photo) {
 	
 	var container = document.getElementById("galleria");
 	container.appendChild(img);
-	
 }
 
 function encodeError(text) {
@@ -119,4 +107,5 @@ function initPage() {
 	}
 	if(urlParameters.photo)
 		Galleria.configure("show", urlParameters.photo);
+	FB.XFBML.parse(document.getElementById("galleria"));
 }
