@@ -1,0 +1,106 @@
+#scPlayer {
+	position: fixed;
+    z-index: 901;
+    width: 100%;
+    bottom: 0px;
+    border-bottom: #f50 5px solid;
+	overflow: hidden;
+	white-space: nowrap;
+	max-height: 100vh;
+}
+
+#scPlayer #scEmbed {
+	position: relative;
+	width: 100%;
+	z-index: 901;
+	height: auto;
+	display: none;
+	
+}
+
+#scPlayer #scEmbed .extend {
+	height: 100vh;
+}
+
+#scPlayer #scControls {
+    position: relative;
+	max-width: 100%;
+	z-index: 902;
+	height: 100px;
+}
+
+#scPlayer #scControls .left {
+	left: 0px;
+	direction: ltr;
+	position: absolute;
+	height: 100px;
+	float: left;
+}
+
+#scPlayer #scControls .right {
+	right: 0px;
+	direction: rtl;
+	position: absolute;
+	height: 100px;
+}
+
+#scPlayer #scControls .left .control {
+	float: left;
+}
+
+#scPlayer #scControls .right .control {
+	float: right;
+}
+
+#scPlayer #scControls .control {
+	position: relative;
+	margin: 0px 10px;
+	display: inline-block;
+	width: 100px;
+	white-space: normal;
+}
+
+#scPlayer #scControls .control i {
+    color: #f50;
+    padding: 10px;
+	cursor: pointer;
+	line-height: 80px;
+	vertical-align: middle;
+}
+
+#scPlayer #scControls .expend {
+	font-size: 50px;
+	display: none;
+}
+
+#scPlayer #scControls .open {
+	font-size: 80px;
+}
+
+#scPlayer #scControls .open i {
+	cursor: wait;
+}
+
+#scPlayer #scControls .volume {
+	display: none;
+	height: 100px;
+	vertical-align: middle;
+	white-space: nowrap;
+}
+
+#scPlayer #scControls .volume i {
+	font-size: 60px;
+	display: inline-block;
+}
+
+#scPlayer #scControls .volume div {
+	width: 0px;
+	display: inline-block;
+	opacity: 0;
+}
+
+@media screen and (max-width: 765px){
+	#scPlayer #scEmbed iframe {
+		height: 50px;
+	}
+}
