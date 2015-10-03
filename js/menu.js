@@ -53,11 +53,12 @@ function encodeTab(tab) {
 			ul.appendChild(subTab);
 		}
 		li.appendChild(ul);
+	} else if (tab.link) {
+		li.setAttribute("onclick", "href('" + tab.link + "');");
+	} else if (tab.script) {
+		li.setAttribute("onclick", tab.script);
 	} else {
-		if(tab.link)
-			li.setAttribute("onclick", "href('" + tab.link + "');");
-		else
-			li.setAttribute("onclick", "href('development.html');");
+		li.setAttribute("onclick", "href('development.html');");
 	}
 	if (currentTab && tab.link == currentTab) {
 		li.setAttribute("class", "current");

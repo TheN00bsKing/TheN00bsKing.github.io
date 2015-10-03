@@ -15,7 +15,10 @@
 	z-index: 901;
 	height: auto;
 	display: none;
-	
+}
+
+#scPlayer #scEmbed iframe {
+	margin-bottom: -4px;
 }
 
 #scPlayer #scEmbed .extend {
@@ -97,6 +100,7 @@
 	width: 0px;
 	display: inline-block;
 	opacity: 0;
+	overflow: visible;
 }
 
 @media screen and (max-width: 765px){

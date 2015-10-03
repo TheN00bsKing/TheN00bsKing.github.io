@@ -4,6 +4,7 @@
 	<Tab name="גלריה">
 		<Tab name="תמונות" link="gallery.html"></Tab>
 		<Tab name="סרטונים" link=""></Tab>
+		<Tab name="מוזיקה" script="SoundCloudWidget.play(); SoundCloudWidget.toggleExpend(true);"></Tab>
 	</Tab>
 	<Tab name="חנות" link="shop.html"></Tab>
 	<Tab name="צור קשר" link=""></Tab>

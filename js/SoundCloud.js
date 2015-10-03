@@ -36,28 +36,46 @@ var SoundCloudWidget = {
 		});
 		this.widget.bind(SC.Widget.Events.PLAY, function() {
 			$("#scPlayer #scControls .open i").css("cursor", "progress"); //progress cursor when playing
-			//$("#scPlayer #scControls .volume").fadeIn("slow"); //show volume when playing
+			$("#scPlayer #scControls .volume").fadeIn("slow"); //show volume when playing
 		});
 		this.widget.bind(SC.Widget.Events.PAUSE, function() {
 			$("#scPlayer #scControls .open i").css("cursor", "pointer"); //pointer cursor when pause
-			//$("#scPlayer #scControls .volume").fadeOut("slow"); //hide volume when pause
+			$("#scPlayer #scControls .volume").fadeOut("slow"); //hide volume when pause
 		});
 	},
 	element: document.getElementById("scEmbed"),
 	widget: {},
-	toggleVisibility: function() { //toggle widget visibility
-		$(this.element).slideToggle("slow", function() {
-			$("#scPlayer #scControls .expend").fadeToggle();
-		});
+	toggleVisibility: function(state) { //toggle widget visibility
+		if (state === true && $(this.element).is(":visible")) {
+			
+		} else if (state === false && $(this.element).is(":hidden")) {
+				   
+		} else {
+			$(this.element).slideToggle("slow", function() {
+				$("#scPlayer #scControls .expend").fadeToggle();
+			});
+		}
 	},
-	toggleExpend: function() { //toggle expend of the widget
+	toggleExpend: function(state) { //toggle expend of the widget
 		$("#scPlayer #scEmbed #scWidget").toggleClass("extend", 1000);
+		$("#scPlayer #scControls .expend i").toggleClass("fa-compress");
+		$("#scPlayer #scControls .expend i").toggleClass("fa-expend");
+		if (state === true) {
+			$("#scPlayer #scEmbed #scWidget").addClass("extend", 1000);
+			$("#scPlayer #scControls .expend i").removeClass("fa-expend");
+			$("#scPlayer #scControls .expend i").addClass("fa-compress");
+		} else if (state === false) {
+			$("#scPlayer #scEmbed #scWidget").removeClass("extend", 1000);
+			$("#scPlayer #scControls .expend i").addClass("fa-expend");
+			$("#scPlayer #scControls .expend i").removeClass("fa-compress");
+		}
 	},
 	setVolume: function(volume) {
 		this.widget.setVolume(volume);
 	},
 	play: function() {
 		this.widget.play();
+		this.toggleVisibility(true);
 	},
 	saveCookie: function(callback) {
 		var string = "";
@@ -129,12 +147,12 @@ SoundCloudWidget.initialize(function() {
 
 //volume hover show the slider
 $("#scPlayer #scControls .volume").hover(function() {
-	$("#scVolume").animate({
+	$("#scVolume").stop().animate({
 		width: 300,
 		opacity: 1
 	}, 300);
 }, function() {
-	$("#scVolume").animate({
+	$("#scVolume").stop().delay(600).animate({
 		width: 0,
 		opacity: 0
 	}, 300);
