@@ -65,7 +65,7 @@ function encodeError(text) {
 
 function initPage() {
 	if(urlParameters.id){
-		getData(urlParameters.id + "?fields=id, name, link, photos{likes, images, link}", function (album) {
+		getData(urlParameters.id + "?fields=id, name, link, photos.limit(999){likes, images, link}", function (album) {
 			if (album) {
 				var head = document.head.children;
 				for (var i = 0; i < head.length; i++) {

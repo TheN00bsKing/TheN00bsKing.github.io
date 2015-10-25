@@ -32,14 +32,14 @@ function encodeHeader(name, link) {
 
 function encodeError(text) {
 	var div = document.getElementById("error");
-	var h1 = div.getElementsByTagName("h1");
-	h1[0].innerText = text;
-	h1[0].style.display = "block";
+	var h1 = div.getElementsByTagName("h1")[0];
+	h1.innerText = text;
+	h1.style.display = "block";
 }
 
 function initPage() {
 	if(urlParameters.id){
-		getData(urlParameters.id + "?fields=id, name, link, photos", function (album) {
+		getData(urlParameters.id + "?fields=id, name, link, photos.limit(999){images}", function (album) {
 			if(album){
 				var head = document.head.children;
 				for (var i = 0; i < head.length; i++) {
