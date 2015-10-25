@@ -28,18 +28,6 @@ function runGalleria() {
 	Galleria.run('.galleria');
 }
 
-function toggleSlideshow() {
-	var div = document.getElementById("play");
-	var icon = document.getElementsByTagName("i").item(0);
-	if(icon.className == "fa fa-play-circle"){
-		Galleria.play();
-		icon.className = "fa fa-pause";
-	}else{
-		Galleria.pause();
-		icon.className = "fa fa-play-circle";
-	}
-}
-
 //init page
 function encodePicture(photo) {
 	var img = document.createElement("a");
@@ -50,7 +38,6 @@ function encodePicture(photo) {
 	img.appendChild(thumbnail);
 	
 	var like = document.createElement("fb:like");
-	alert(photo.link);
 	like.setAttribute("href", photo.link);
 	img.setAttribute("data-layer", like.innerHTML);
 	

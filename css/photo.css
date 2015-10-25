@@ -44,21 +44,3 @@ body {
 #back a {
 	color: #fff;
 }
-
-#play {
-	position: absolute;
-	z-index: 500;
-	font-size: 30px;
-	padding: 30px;
-	right: 0px;
-	display: none;
-}
-
-#play:hover {
-	font-size: 40px;
-	padding: 25px;
-}
-
-#play i {
-	color: #fff;
-}
